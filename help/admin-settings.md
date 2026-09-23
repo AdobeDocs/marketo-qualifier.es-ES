@@ -1,6 +1,6 @@
 ---
 title: Configuración de administración
-description: Obtenga información sobre cómo administrar los campos de CRM, la sincronización de actividades, la exclusión de correo electrónico y otras configuraciones de administración de Adobe Marketo Qualifier.
+description: Obtenga información sobre cómo administrar campos CRM, sincronización de actividades, exclusión de correo electrónico y otras configuraciones de administración de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
@@ -14,9 +14,9 @@ feature_v2:
     internal-label: Administration
 
 internal-label: Administration
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1221'
 ht-degree: 0%
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Use **[!UICONTROL Configuración de administración]** para configurar integraciones de CRM, administrar el Centro de conocimiento y configurar la exclusión de correo electrónico.
 
-Adobe Marketo Qualifier se conecta a Salesforce o a Microsoft Dynamics 365. La conexión proporciona a Account Qualification Agent (AQA) una vista coherente de los posibles clientes, las cuentas, los contactos, las actividades y los propietarios. Marketo Qualifier también puede escribir actividades de divulgación y el estado de exclusión en CRM y sincronizar las actividades de divulgación con Marketo.
+[!DNL Adobe Marketo Qualifier] se conecta a Salesforce o Microsoft Dynamics 365. La conexión proporciona a Account Qualification Agent (AQA) una vista coherente de los posibles clientes, las cuentas, los contactos, las actividades y los propietarios. Marketo Qualifier también puede escribir actividades de divulgación y estados de exclusión en CRM y sincronizar las actividades de divulgación con Marketo.
 
 Para configurar las conexiones de CRM, la asignación de campos y la sincronización de actividades, vaya a **[!UICONTROL Administración]** > **[!UICONTROL Configuración de administración]** > **[!UICONTROL Conexiones de CRM]**. Los usuarios estándar pueden utilizar los datos y filtros de CRM configurados, pero no pueden cambiar esta configuración. Para conectar un CRM por primera vez, consulte [Introducción](getting-started.md#connect-your-crm).
 
@@ -37,12 +37,25 @@ Para configurar las conexiones de CRM, la asignación de campos y la sincronizac
 Marketo Qualifier trabaja con su CRM de las siguientes maneras:
 
 * **CRM MCP queries**: Account Qualification Agent consulta datos de CRM activos para que las respuestas y perspectivas reflejen el estado actual de sus registros.
-* **Complemento incrustado**: el complemento CRM muestra [!DNL Marketo Sales Insights] (MSI) datos y datos auténticos en su CRM. Utilice el complemento para agregar un cliente potencial al Calificador de Marketo.
+* **Complemento incrustado**: el complemento CRM muestra [!DNL Marketo Sales Insights] (MSI) datos y datos auténticos en su CRM. Use el complemento para agregar un cliente potencial a [!DNL Marketo Qualifier].
 * **Sincronización de actividades**: cuando un administrador activa **[!UICONTROL Sincronización de actividades]**, las actividades de alcance se sincronizan con CRM y Marketo.
+
+### Priorizar posibles clientes en el complemento CRM
+
+El complemento CRM proporciona un inicio predeterminado en el que los representantes pueden priorizar los posibles clientes sin salir de CRM. Las pestañas disponibles organizan el trabajo por origen e intención:
+
+* **[!UICONTROL Más probables]**: recomendaciones de posibles clientes listas para la acción.
+* **[!UICONTROL Mi lista de seguimiento]**: posibles clientes a los que está realizando un seguimiento.
+* **[!UICONTROL Actividad web]**: visitas recientes al sitio de posibles clientes conocidos.
+* **[!UICONTROL Actividad web anónima]**: visitas de visitantes no identificados.
+* **[!UICONTROL Mi correo electrónico]**: participación por correo electrónico asociada con sus posibles clientes.
+* **[!UICONTROL Seminario web]**: actividad de registro y asistencia al seminario web.
+
+Cada posible cliente puede incluir una vista previa del correo electrónico [!DNL Marketo], un vínculo a los detalles del posible cliente e investigación de LinkedIn. Las pestañas y los datos a los que puede acceder dependen de la configuración del complemento CRM.
 
 ## Ámbito de acceso CRM
 
-Marketo Qualifier lee usuarios, contactos, asignaciones de propietarios, posibles clientes, cuentas, oportunidades y actividades desde CRM. Solo escribe las actividades de divulgación registradas y el estado de exclusión en CRM, y sincroniza las actividades de divulgación con Marketo. El administrador de CRM prepara el acceso a la API en Salesforce o Dynamics. A continuación, un administrador del calificador de Marketo conecta el CRM, asigna los campos de entrada y elige si desea sincronizar las actividades.
+Marketo Qualifier lee usuarios, contactos, asignaciones de propietarios, posibles clientes, cuentas, oportunidades y actividades desde CRM. Solo escribe las actividades de divulgación registradas y el estado de exclusión en CRM, y sincroniza las actividades de divulgación con Marketo. El administrador de CRM prepara el acceso a la API en Salesforce o Dynamics. A continuación, un administrador de Marketo Qualifier conecta el CRM, asigna campos de entrada y elige si desea sincronizar las actividades.
 
 >[!NOTE]
 >
@@ -55,7 +68,7 @@ Una vez conectado el CRM, seleccione **[!UICONTROL Administrar]** para la conexi
 1. Seleccione **[!UICONTROL Agregar sección]**.
 1. Introduzca un nombre de sección y una descripción.
 1. Seleccione un tipo de entidad. **[!UICONTROL Clientes potenciales]** está seleccionado de forma predeterminada. También están disponibles **[!UICONTROL Contactos]**, **[!UICONTROL Cuentas]** y **[!UICONTROL Oportunidades]**.
-1. Seleccione los campos CRM que desea importar.
+1. Para importar campos de CRM, seleccione los campos.
 
    Cada fila de campo muestra su **[!UICONTROL nombre para mostrar]**, **[!UICONTROL nombre de campo]** y **[!UICONTROL tipo de datos]**.
 
@@ -72,13 +85,13 @@ Los campos asignados aparecen en las áreas correspondientes de Marketo Qualifie
 
 1. De **[!UICONTROL conexiones CRM]**, seleccione **[!UICONTROL Administrar]** para el CRM conectado.
 1. Abrir **[!UICONTROL asignación saliente]**.
-1. Active **[!UICONTROL Sincronización de actividades]** para sincronizar las actividades de extensión de Marketo Qualifier con CRM y Marketo.
+1. Active **[!UICONTROL Sincronización de actividades]** para sincronizar las actividades de Marketo Qualifier con CRM y Marketo.
 
-Cuando la sincronización de actividades está desactivada, el Calificador de Marketo sigue utilizando datos de CRM de entrada, pero no sincroniza las actividades de divulgación con su CRM o Marketo.
+Cuando la sincronización de actividades está desactivada, Marketo Qualifier sigue utilizando datos CRM entrantes, pero no sincroniza las actividades de divulgación con su CRM o Marketo.
 
 ## Configurar reglas de sincronización de CRM
 
-Marketo Qualifier puede escribir las actualizaciones de estado de los posibles clientes en Salesforce y Microsoft Dynamics automáticamente a medida que un posible cliente avanza por un flujo de trabajo saliente, de modo que los representantes ya no actualicen el CRM manualmente.
+Marketo Qualifier puede escribir las actualizaciones de estado de los posibles clientes en Salesforce y Microsoft Dynamics automáticamente a medida que un posible cliente avanza a través de un flujo de trabajo saliente, de modo que los representantes ya no actualicen el CRM manualmente.
 
 ### Qué hacen las reglas de sincronización CRM
 
@@ -106,17 +119,18 @@ Con las reglas de sincronización de CRM configuradas, los equipos de ventas ven
 
 ## Creación de un manual de centro de conocimiento {#knowledge-center}
 
-El **[!UICONTROL Centro de conocimientos]** proporciona a Account Qualification Agent (AQA) acceso a sus materiales de ventas. Marketo Qualifier utiliza estos materiales para generar investigaciones, perspectivas de cualificación y divulgación que reflejen las ventas de su organización. Solo los administradores pueden crear y administrar el manual de implementación.
+El **[!UICONTROL Centro de conocimientos]** proporciona a Account Qualification Agent (AQA) acceso a sus materiales de ventas. Marketo Qualifier utiliza estos materiales para generar investigaciones, perspectivas de cualificación y actividades de divulgación que reflejen las ventas de su organización. Solo los administradores pueden crear y administrar el manual de implementación.
 
 ![Centro de conocimientos](assets/knowledge-center.png){width="800" zoomable="yes"}
 
-1. En el panel de navegación izquierdo, expanda **[!UICONTROL Administración]**, seleccione **[!UICONTROL Configuración de administración]** y seleccione **[!UICONTROL Centro de conocimiento]**
-1. u
-1. Establezca **[!UICONTROL Nombre de la compañía]** y **[!UICONTROL URL de la compañía]** que el Calificador de Marketo usa para investigar su compañía y redactar correos electrónicos.
+1. En el panel de navegación izquierdo, expanda **[!UICONTROL Administración]**, seleccione **[!UICONTROL Configuración de administración]** y seleccione **[!UICONTROL Centro de conocimiento]**.
+1. Establezca **[!UICONTROL Nombre de la compañía]** y **[!UICONTROL Dirección URL de la compañía]** que Marketo Qualifier usa para investigar su compañía y redactar correos electrónicos.
 1. Cargar reproducciones de ventas, perfiles de cliente (ICP) ideales, guías de posicionamiento y otros materiales de promoción de ventas en formato PDF, PPTX o DOCX.
 1. Seleccione **[!UICONTROL Generar libro de estrategias]**.
 
-Cada documento cargado muestra su estado de procesamiento, como **[!UICONTROL Listo]**, y la última vez que se actualizó.
+La página muestra el estado del último manual creado y proporciona la siguiente acción después de cargar contenido. Para recuperar el estado más reciente después de una compilación, seleccione **[!UICONTROL Actualizar]**.
+
+Cada documento cargado también muestra su estado de procesamiento, como **[!UICONTROL Listo]**, y la última vez que se actualizó.
 
 >[!NOTE]
 >
@@ -138,7 +152,7 @@ En ambos casos, el contenido generado refleja la mensajería en su manual en lug
 
 La configuración se guarda automáticamente.
 
-Cuando un cliente potencial selecciona el vínculo, el calificador de Marketo deja de enviarle correos electrónicos y sincroniza el estado de exclusión con el CRM conectado.
+Cuando un cliente potencial selecciona el vínculo, Marketo Qualifier deja de enviarle correos electrónicos y sincroniza el estado de exclusión con el CRM conectado.
 
 ## Referencia: Parámetros de API de muestra
 

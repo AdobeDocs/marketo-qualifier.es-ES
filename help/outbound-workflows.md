@@ -1,6 +1,6 @@
 ---
 title: Crear y administrar flujos de trabajo salientes
-description: Obtenga información sobre cómo crear, compartir, revisar y administrar flujos de trabajo salientes generados por IA en Adobe Marketo Qualifier para ejecutar cadencias de alcance impulsadas por objetivos.
+description: Aprenda a crear, compartir, revisar y administrar flujos de trabajo salientes generados por IA en [!DNL Adobe Marketo Qualifier] para ejecutar cadencias de alcance impulsadas por objetivos.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2271'
 ht-degree: 0%
 ---
 
@@ -67,12 +67,14 @@ Los administradores pueden asignar el flujo de trabajo saliente a un compañero 
 
 El objetivo define el resultado deseado y guía la segmentación, la cadencia y la generación de correo electrónico.
 
-1. Seleccione **[!UICONTROL Comenzar desde cero]** para escribir su propia meta o seleccione **[!UICONTROL Comenzar desde la plantilla]** para usar una plantilla guardada.
+1. Para escribir tu propia meta, selecciona **[!UICONTROL Comenzar desde cero]**, o para usar una plantilla guardada, selecciona **[!UICONTROL Comenzar desde la plantilla]**.
 
-1. Seleccione una de las **[!UICONTROL metas recomendadas]** que coincida con su compañía. Cada recomendación incluye una breve explicación de por qué encaja. Seleccione una recomendación para completar la meta, seleccione **[!UICONTROL Ver todas]** para examinar el conjunto completo de recomendaciones o ingrese su propio objetivo. También puedes elegir de la lista **[!UICONTROL Metas populares]**.
+1. Seleccione una de las **[!UICONTROL metas recomendadas]** que coincida con su compañía. Cada recomendación incluye una breve explicación de por qué encaja. Para rellenar el objetivo, seleccione una recomendación. Para examinar el conjunto completo de recomendaciones, selecciona **[!UICONTROL Ver todas]** o ingresa tu propio objetivo. También puedes elegir de la lista **[!UICONTROL Metas populares]**.
 1. Seleccione **[!UICONTROL Siguiente: Segmentación]**.
 
 Indique un resultado específico en la meta. Por ejemplo, escriba `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` en lugar de `Promote campaign automation`.
+
+La IA conserva los requisitos en el objetivo exactamente en los puntos de contacto generados. Incluya frases exactas, líneas de apertura o cierre obligatorias, sesiones con nombre y fechas, o una estructura específica cuando el contenido generado debe conservarlas.
 
 ### Paso 2: Configuración de los filtros de segmentación
 
@@ -80,12 +82,29 @@ Los filtros de segmentación definen qué clientes potenciales son aptos. Cuando
 
 ![Filtros de segmentación](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
 
-1. Seleccione la flecha hacia abajo para abrir la lista **[!UICONTROL Agregar un filtro]** y, a continuación, seleccione un filtro.
+Describa a su posible cliente ideal en lenguaje natural. Por ejemplo, escriba `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] convierte la descripción en criterios de segmentación que puede revisar y perfeccionar.
+
+1. Para abrir la lista **[!UICONTROL Agregar un filtro]**, seleccione la flecha hacia abajo y, a continuación, seleccione un filtro.
 
 1. Establezca valores para el filtro.
 1. Añada más filtros si necesita reducir la audiencia.
 
 1. Seleccione **[!UICONTROL Siguiente: Generar puntos de contacto]**.
+
+Los objetivos pueden utilizar el tipo de actividad, la puntuación, la clasificación y otros atributos disponibles. Combine criterios con [!DNL AND] o [!DNL OR] y use operadores como igual a, contiene, mayor que, menor que y entre.
+
+### Inscribir automáticamente a los posibles clientes desde Marketing destacado
+
+Un flujo de trabajo saliente puede evaluar la actividad de elementos destacados de marketing en directo según sus criterios de objetivo. Cuando la actividad coincide, [!DNL Marketo Qualifier] resuelve el propietario de CRM del cliente potencial por correo electrónico e inscribe al cliente potencial solamente en un flujo de trabajo elegible que pertenece a ese representante.
+
+La inscripción automática sigue esta secuencia:
+
+1. Un representante define los criterios de segmentación del flujo de trabajo.
+1. Actividad [!DNL Marketo] activa que llega para un cliente potencial.
+1. [!DNL Marketo Qualifier] resuelve al propietario del cliente potencial desde Salesforce o Microsoft Dynamics y evalúa la actividad con respecto a los flujos de trabajo elegibles del propietario.
+1. Cuando coinciden los criterios, el cliente potencial se inscribe y comienza el contacto.
+
+Si otro representante ya se está poniendo en contacto con el posible cliente, [!DNL Marketo Qualifier] muestra una advertencia antes de que se inicie el alcance duplicado.
 
 ### Paso 3: Generar y revisar puntos de contacto
 
@@ -147,7 +166,7 @@ Guardar abre la vista de selección de clientes potenciales con los filtros de o
 
 1. Ajuste los filtros aquí si necesita expandir o reducir la lista.
 1. Seleccione los clientes potenciales mediante las casillas de verificación.
-1. Seleccione **[!UICONTROL Siguiente: revise los puntos de contacto]** para iniciar la generación de correo electrónico por cliente potencial.
+1. Para iniciar la generación de correo electrónico por cliente potencial, seleccione **[!UICONTROL Siguiente: revisar los puntos de contacto]**.
 
 AI genera un correo electrónico personalizado para cada cliente potencial y punto de contacto de correo electrónico seleccionados. Los puntos de contacto de Phone y LinkedIn In InMail siguen siendo pasos programados. Para continuar trabajando durante la generación, seleccione **[!UICONTROL Notificar cuando esté listo]**.
 
@@ -159,14 +178,14 @@ Los correos electrónicos también se pueden generar en el idioma del posible cl
 
 ## Revisar y perfeccionar correos electrónicos generados
 
-Cuando finalice la generación, la vista de detalles Flujo de trabajo saliente le pedirá que revise los borradores. El calificador de Adobe Marketo no envía correos electrónicos hasta que los aprueba.
+Cuando finalice la generación, la vista de detalles Flujo de trabajo saliente le pedirá que revise los borradores. [!DNL Marketo Qualifier] no envía correo electrónico hasta que usted lo aprueba.
 
 1. En la vista de detalles del flujo de trabajo saliente, seleccione **[!UICONTROL Revisar borradores]** en el banner.
 1. El paso **[!UICONTROL Revisar puntos de contacto]** tiene dos pestañas:
    * **[!UICONTROL Listo para revisión]**: correos electrónicos que se terminaron de generar.
    * **[!UICONTROL Generando]**: correos electrónicos que se siguen escribiendo.
-1. En la lista de clientes potenciales de la izquierda, seleccione un nombre para cargar los puntos de contacto de ese cliente potencial a la derecha.
-1. Use las comillas angulares (**>**) en un punto de contacto para expandir y leer la línea de asunto y el cuerpo completos.
+1. Para cargar los puntos de contacto de un cliente potencial a la derecha, seleccione el nombre del cliente potencial en la lista de la izquierda.
+1. Para expandir un punto de contacto y leer la línea de asunto y el cuerpo completos, use sus comillas angulares (**>**).
 
 ### Lea el razonamiento de IA
 
@@ -176,7 +195,7 @@ Para cada correo electrónico generado, **[!UICONTROL Reasoning]** explica cómo
 
 Para cambios pequeños de redacción o de tono:
 
-1. En el punto de contacto expandido, seleccione el icono **[!UICONTROL Editar]** para abrir el editor.
+1. Para abrir el editor, seleccione el icono **[!UICONTROL Editar]** en el punto de contacto expandido.
 1. Edite la línea de asunto o el cuerpo.
 1. Seleccione **[!UICONTROL Guardar]**.
 
@@ -208,13 +227,15 @@ Los correos electrónicos aprobados se envían según los días seleccionados, l
 
 ## Compartir un flujo de trabajo saliente
 
-Cada flujo de trabajo saliente tiene una configuración **[!UICONTROL Permissions]**. Los flujos de trabajo salientes son **[!UICONTROL Privados]** de manera predeterminada. El propietario puede seleccionar **[!UICONTROL Compartido con todos]** para que el equipo disponga de un flujo de trabajo saliente.
+Cada flujo de trabajo saliente tiene una configuración **[!UICONTROL Permissions]**. Los flujos de trabajo salientes son **[!UICONTROL Privados]** de manera predeterminada. Para que un flujo de trabajo saliente esté disponible para el equipo, el propietario puede seleccionar **[!UICONTROL Compartido con todos]**.
 
 >[!CAUTION]
 >
 >Compartir es permanente. Después de establecer un flujo de trabajo saliente en **[!UICONTROL Compartido con todos]**, no se puede volver a cambiar a **[!UICONTROL Privado]**.
 
 En un flujo de trabajo saliente compartido, los compañeros de equipo pueden inscribir a sus propios posibles clientes. Cada persona puede administrar o pausar solo los clientes potenciales en los que se ha inscrito, incluso cuando se utilizan acciones masivas. El propietario del flujo de trabajo saliente solo puede editar la configuración del nivel de plan, incluida la programación, la zona horaria y la cadencia. Esta configuración es de solo lectura para compañeros de equipo.
+
+Cuando inscriba clientes potenciales en un flujo de trabajo saliente compartido, elija si el correo electrónico se envía como propietario del flujo de trabajo o como representante asignado de cada posible cliente.
 
 Utilice estos filtros para mantener centrados los flujos de trabajo salientes compartidos y los resultados:
 
@@ -238,7 +259,7 @@ La [Bandeja de salida de correo electrónico](email-outbox.md) enumera los mensa
 
 ## Reserva de reuniones
 
-Al conectar el calendario, Marketo Qualifier genera un vínculo de reserva personal que los posibles clientes pueden utilizar para programar su tiempo.
+Al conectar el calendario, Marketo Qualifier genera un vínculo de reserva personal que los posibles clientes pueden utilizar para programar el tiempo con usted.
 
 * **Vínculos de reserva**: configure la conexión y disponibilidad del calendario en [Configuración del perfil](profile-settings.md). Añada el vínculo de reserva a su firma de correo electrónico para que aparezca en los correos electrónicos salientes.
 * **Colocación de cadencia**: Marketo Qualifier inserta el vínculo de reserva en los puntos relevantes de una cadencia. Puede cambiar su ubicación.

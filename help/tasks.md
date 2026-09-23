@@ -1,6 +1,6 @@
 ---
-title: Tareas en Adobe Marketo Qualifier
-description: Aprenda a procesar tareas de alcance manuales y a revisar los posibles clientes sugeridos por el agente en la cola de tareas Calificador de Adobe Marketo.
+title: Tareas en [!DNL Adobe Marketo Qualifier]
+description: Aprenda a procesar tareas de alcance manuales y a revisar los posibles clientes sugeridos por el agente en la cola de tareas [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/MbTN1r-ARrW-XYtdIS-KZT7K1Lk-B3GihT8iXL60GrQ'
@@ -12,9 +12,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '1086'
 ht-degree: 0%
 ---
 
@@ -45,7 +45,7 @@ Las tareas manuales están vinculadas a los pasos del flujo de trabajo saliente 
 
 * **[!UICONTROL LinkedIn In InMail]**: se crea cuando una cadencia alcanza un paso de LinkedIn In InMail. El panel de trabajo muestra el contenido que se copia y envía desde LinkedIn. Expanda **[!UICONTROL Motivo de IA]** para revisar el motivo.
 
-* **[!UICONTROL Revisión de correo electrónico]**: Creada después de que el calificador de Adobe Marketo genere los correos electrónicos personalizados de un cliente potencial. Seleccione **[!UICONTROL Revisar correos electrónicos]** para revisar y aprobar los borradores antes de que comience el alcance. Ver [Revisar y perfeccionar los correos electrónicos generados](outbound-workflows.md#review-and-refine-generated-emails).
+* **[!UICONTROL Revisión de correo electrónico]**—Creada después de [!DNL Adobe Marketo Qualifier] genera los correos electrónicos personalizados de un cliente potencial. Para revisar y aprobar los borradores antes de que comience el alcance, seleccione **[!UICONTROL Revisar correos electrónicos]**. Ver [Revisar y perfeccionar los correos electrónicos generados](outbound-workflows.md#review-and-refine-generated-emails).
 
 ![Revisión de correo electrónico](assets/tasks-review.png)
 
@@ -83,7 +83,7 @@ La barra de herramientas situada encima de la lista controla qué tareas aparece
 * **[!UICONTROL Ordenar]**: ordena por fecha de vencimiento o fecha de creación. El criterio de ordenación también determina el orden en que avanza la cola.
 * **[!UICONTROL Buscar tareas]**: busque tareas por nombre de cliente potencial, nombre de empresa o flujo de trabajo saliente. La búsqueda se aplica con filtros activos.
 
-Los filtros activos aparecen como chips debajo de la barra de herramientas. Seleccione **[!UICONTROL Borrar todo]** para restablecerlos.
+Los filtros activos aparecen como chips debajo de la barra de herramientas. Para restablecerlos, seleccione **[!UICONTROL Borrar todo]**.
 
 ### Estado de tarea
 
@@ -104,7 +104,7 @@ Las tareas completadas, omitidas y canceladas son finales. Sus acciones ya no es
 
 La pestaña **[!UICONTROL Sugerencias del agente]** enumera los posibles clientes que coinciden con los criterios de segmentación de un flujo de trabajo saliente y se recomiendan para la inscripción. Para activar las recomendaciones, consulte [Flujos de trabajo salientes](outbound-workflows.md).
 
-Seleccione una sugerencia para revisarla en el panel de trabajo:
+Para revisar una sugerencia en el panel de trabajo, selecciónela:
 
 * Un distintivo de actualización marca cada sugerencia como **[!UICONTROL Nueva]** o **[!UICONTROL Anterior]**.
 * La tabla **[!UICONTROL Contactos recomendados]** o **[!UICONTROL Contactos recomendados]** enumera los posibles clientes propuestos con columnas para **[!UICONTROL Nombre]**, **[!UICONTROL Título]**, **[!UICONTROL Cuenta]**, **[!UICONTROL Estado]**, **[!UICONTROL Correo electrónico]** y **[!UICONTROL Última actualización]**.
@@ -116,6 +116,23 @@ Hay dos acciones disponibles:
 
 La ficha **[!UICONTROL Sugerencias del agente]** incluye los filtros de estado **[!UICONTROL Actual]**, **[!UICONTROL Completado]** y **[!UICONTROL Cancelado]**, un filtro de flujo de trabajo saliente y la ordenación por fecha de creación.
 
+### Responder a un cliente potencial con una sugerencia de agente
+
+Cuando un cliente potencial responda a un correo electrónico, [!DNL Marketo Qualifier] puede redactar una respuesta en el subproceso y agregarla como tarea en **[!UICONTROL Sugerencias del agente]**. El borrador utiliza el contexto relevante de:
+
+* El hilo de correo electrónico completo, no solo el mensaje más reciente.
+* Su material promocional e investigación de productos del Centro de conocimiento.
+* Señales de cuenta, como noticias recientes, participación de marketing y actividad de CRM.
+* Su [contexto de borrador de correo electrónico](profile-settings.md#email-drafting-context) guardado.
+
+El asistente adapta la respuesta a la intención del posible cliente. Por ejemplo, puede ofrecer horarios a través del vínculo de reserva para una convocatoria de reunión, reforzar el valor cuando el cliente potencial esté interesado, responder a una pregunta sobre un producto de su garantía, compartir un activo relevante, abordar una objeción con un diferenciador o utilizar una respuesta de baja presión cuando el cliente potencial desee aplazar.
+
+Los mensajes sobre los precios, los requisitos legales o de seguridad, las respuestas hostiles y las solicitudes poco claras permanecen en poder del representante para obtener una respuesta personal.
+
+1. Abra la sugerencia de respuesta, revise el hilo completo y la respuesta del borrador.
+1. Para crear otro borrador, edite la respuesta o seleccione **[!UICONTROL Generar con IA]**.
+1. Para enviar la respuesta y continuar con el flujo de trabajo saliente del cliente potencial, seleccione **[!UICONTROL Aprobar y enviar]**.
+
 ## Completar tareas desde un flujo de trabajo saliente
 
 En la vista **[!UICONTROL Clientes potenciales comprometidos]** de un flujo de trabajo saliente, un punto de contacto manual proporciona las mismas opciones de **[!UICONTROL Marcar como completado]**, **[!UICONTROL Omitir]** y notas. Al completar una tarea, también se actualiza su estado en la página **[!UICONTROL Tareas]**. Ver [Flujos de trabajo salientes](outbound-workflows.md).
@@ -124,7 +141,7 @@ En la vista **[!UICONTROL Clientes potenciales comprometidos]** de un flujo de t
 
 * Cuando no tiene tareas en las que actuar, la lista muestra un mensaje _Se ha puesto al día con respecto al mensaje de hoy_.
 * Cuando los filtros no coinciden con ninguna tarea, la lista indica que ninguna tarea coincide con los filtros.
-* Cuando no se selecciona ninguna tarea, el panel de trabajo le solicita que seleccione una tarea para ver sus detalles.
+* Cuando no se selecciona ninguna tarea, el panel de trabajo le solicita que seleccione una tarea. Para ver sus detalles, seleccione una tarea.
 
 >[!MORELIKETHIS]
 >
