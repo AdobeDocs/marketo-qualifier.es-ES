@@ -14,9 +14,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 
@@ -33,7 +33,7 @@ Abra una cuenta desde el perfil de un cliente potencial asociado a ella.
 
 ![Página de detalles del cliente potencial con fichas de persona y cuenta](./assets/account-home.png){width="800" zoomable="yes"}
 
-Adobe Marketo Qualifier identifica la cuenta del registro CRM del cliente potencial. La misma vista de cuenta está disponible en todos los clientes potenciales asociados a esa cuenta. Si el calificador de Marketo no puede coincidir con una cuenta, la pestaña muestra _No se encontró ninguna cuenta_.
+Adobe Marketo Qualifier identifica la cuenta del registro de CRM del cliente potencial. La misma vista de cuenta está disponible en todos los clientes potenciales asociados a esa cuenta. Si Marketo Qualifier no puede coincidir con una cuenta, la pestaña muestra _No se encontró ninguna cuenta_.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ La ficha **[!UICONTROL Detalles]** le proporciona una instantánea de la cuenta 
 La tarjeta Información general de la parte superior de la pestaña identifica la cuenta y resume su valor:
 
 * Nombre y región de la cuenta
-* **Ingresos recurrentes anuales (ARR)**: los ingresos recurrentes anuales en todas las suscripciones activas. Seleccione **[!UICONTROL Ver todo]** para revisar ARR por producto en el diálogo **[!UICONTROL Ingresos anuales recurrentes]**.
+* **Ingresos recurrentes anuales (ARR)**: los ingresos recurrentes anuales en todas las suscripciones activas. Para revisar los ARR por producto en el cuadro de diálogo **[!UICONTROL Ingresos anuales recurrentes]**, seleccione **[!UICONTROL Ver todos]**.
 * Estadísticas de cuenta, incluidos los recuentos de oportunidades abiertas y contactos y el valor de la canalización
 
 ### Resumen de descripción general de cuenta
@@ -63,7 +63,7 @@ Utilice los botones que aparecen debajo de la descripción general para cambiar 
 
 | Ver | Lo que muestra |
 | --- | --- |
-| **[!UICONTROL Oportunidades]** | Abra las oportunidades vinculadas a la cuenta, con campos clave para cada una. Seleccione **[!UICONTROL Ver todo]** para ver la lista completa en una tabla. Los detalles de oportunidad, como la fase, el tipo y la fecha de cierre, también se pueden usar para filtrar los contactos de la cuenta en **[!UICONTROL Mis contactos de oportunidad]** cuando un administrador hace que esos campos sean filtrables. |
+| **[!UICONTROL Oportunidades]** | Abra las oportunidades vinculadas a la cuenta, con campos clave para cada una. Para ver la lista completa en una tabla, seleccione **[!UICONTROL Ver todo]**. Los detalles de oportunidad, como la fase, el tipo y la fecha de cierre, también se pueden usar para filtrar los contactos de la cuenta en **[!UICONTROL Mis contactos de oportunidad]** cuando un administrador hace que esos campos sean filtrables. |
 | **[!UICONTROL Miembros principales]** | Los contactos más comprometidos de la cuenta, clasificados por participación. Cada contacto muestra su cargo, dirección de correo electrónico, puntuación de participación e indicador de urgencia. |
 | **[!UICONTROL Datos de intención]** | Las señales de intención de compra para la cuenta, como los productos y temas que está investigando la cuenta. |
 | **[!UICONTROL Miembros del equipo de cuenta]** | Personas asignadas a la cuenta, con su correo electrónico, cargo, territorio y grupo de productos. |
@@ -78,7 +78,7 @@ Desde la vista **[!UICONTROL Miembros principales]**, realice cualquiera de esta
 
 La ficha **[!UICONTROL Investigación de la cuenta]** contiene tres áreas:
 
-* **[!UICONTROL Categorías de investigación]**: temas de investigación. Seleccione una categoría para ver su búsqueda en el panel central.
+* **[!UICONTROL Categorías de investigación]**: temas de investigación. Para ver la búsqueda de una categoría en el panel central, seleccione la categoría.
 * **Contenido de investigación**: tarjetas de investigación generadas por IA agrupadas por categoría. Una tarjeta puede incluir el dominio de origen y las fechas en las que se detectó la señal por primera vez y por última vez.
 * **[!UICONTROL Noticias recientes]**: noticias actuales sobre la cuenta, incluidas fechas, etiquetas y vínculos de origen.
 

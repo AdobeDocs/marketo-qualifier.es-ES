@@ -1,6 +1,6 @@
 ---
 title: Revisar la bandeja de salida de correo electrónico
-description: Obtenga información sobre cómo revisar los correos electrónicos que el calificador de Adobe Marketo ha enviado en su nombre, incluidas las respuestas, en la bandeja de salida de correo electrónico.
+description: Obtenga información sobre cómo revisar los correos electrónicos que Adobe Marketo Qualifier ha enviado en su nombre, incluidas las respuestas, en la bandeja de salida de correo electrónico.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 product_v2:
@@ -11,7 +11,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -27,19 +27,19 @@ La página tiene dos paneles: una lista de correos electrónicos a la izquierda 
 
 La lista **[!UICONTROL Todos los correos electrónicos]** contiene una fila por cada correo electrónico enviado, con el correo electrónico más reciente primero. Cada fila muestra el nombre, el asunto y la fecha de envío del destinatario. Un correo electrónico sin asunto muestra _(sin asunto)_. Desplácese para cargar correos electrónicos más antiguos.
 
-Al abrir la página, Adobe Marketo Qualifier selecciona automáticamente el primer correo electrónico para que su contenido aparezca a la derecha.
+Al abrir la página, Adobe Marketo Qualifier selecciona el primer correo electrónico automáticamente para que su contenido aparezca a la derecha.
 
 Si no has enviado ningún correo electrónico, la lista muestra _Tu bandeja de salida está vacía_. Después de enviar o programar un correo electrónico a través de un flujo de trabajo saliente, aparece aquí.
 
 ## Leer un correo electrónico y sus respuestas
 
-Seleccione un correo electrónico en la lista para abrirlo a la derecha. La vista de lectura consta de tres partes:
+Para abrir un correo electrónico a la derecha, selecciónelo en la lista. La vista de lectura consta de tres partes:
 
 * **Destinatario**: el nombre, el puesto y la cuenta del destinatario, cuando estén disponibles.
-* **Asunto y flujo de trabajo saliente**: el asunto, el nombre del [flujo de trabajo saliente](outbound-workflows.md) que envió el correo electrónico y el estado del flujo de trabajo saliente. Seleccione el nombre del flujo de trabajo saliente para abrirlo.
+* **Asunto y flujo de trabajo saliente**: el asunto, el nombre del [flujo de trabajo saliente](outbound-workflows.md) que envió el correo electrónico y el estado del flujo de trabajo saliente. Para abrir el flujo de trabajo saliente, seleccione su nombre.
 * **Conversación**: el correo electrónico enviado y las respuestas en un subproceso. Cada entrada identifica si el mensaje se envió o recibió e incluye una marca de tiempo.
 
-Los correos electrónicos se procesan según se enviaron, incluido el contenido personalizado. Si el cuerpo de un mensaje no está disponible, Marketo Qualifier muestra una breve nota _Contenido de correo electrónico no disponible_ en su lugar.
+Los correos electrónicos se procesan según se enviaron, incluido el contenido personalizado. Si el cuerpo de un mensaje no está disponible, Marketo Qualifier mostrará una breve nota _Contenido de correo electrónico no disponible_ en su lugar.
 
 >[!NOTE]
 >

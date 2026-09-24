@@ -1,6 +1,6 @@
 ---
 title: Rendimiento de salida en Adobe Marketo Qualifier
-description: Obtenga información sobre cómo revisar los informes de Rendimiento de la organización y Rendimiento de la campaña en Adobe Marketo Qualifier para rastrear la actividad y los resultados salientes.
+description: Obtenga información sobre cómo revisar los informes Rendimiento de la organización y Rendimiento de la campaña en Adobe Marketo Qualifier para rastrear la actividad y los resultados salientes.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/ofBw7JHKkkQaPOeUZ6rreLDAhAfineLveBeVYK-CerQ'
@@ -8,7 +8,7 @@ product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
 Outbound Workflows    internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Rendimiento de salida en Adobe Marketo Qualifier
 
-En el panel de navegación de la izquierda, seleccione **[!UICONTROL Rendimiento de salida]** para rastrear la actividad y los resultados de salida de su equipo. El tablero tiene dos vistas: **[!UICONTROL Rendimiento de la organización]** y **[!UICONTROL Rendimiento de la campaña]**.
+Para hacer un seguimiento de la actividad y los resultados salientes en tu equipo, selecciona **[!UICONTROL Rendimiento de salida]** en el panel de navegación izquierdo. El tablero tiene dos vistas: **[!UICONTROL Rendimiento de la organización]** y **[!UICONTROL Rendimiento de la campaña]**.
 
 ![Rendimiento de salida](assets/outbound-performance.png){width="800" zoomable="yes"}
 
@@ -24,7 +24,7 @@ En el panel de navegación de la izquierda, seleccione **[!UICONTROL Rendimiento
 
 Estos controles se aplican a todas las vistas y pestañas:
 
-* **[!UICONTROL Filtros]**: seleccione **[!UICONTROL Filtros]** para reducir el tablero por miembro del equipo y por campaña.
+* **[!UICONTROL Filtros]**: Para reducir el tablero por miembro del equipo y campaña, seleccione **[!UICONTROL Filtros]**.
 * **[!UICONTROL Período de tiempo]**: seleccione una ventana de informes de 7, 15, 30, 60, 90, 180 o 365 días.
 
 ## Rendimiento de organización
@@ -44,11 +44,11 @@ La pestaña **[!UICONTROL Información general]** resume los resultados saliente
 
 La pestaña **[!UICONTROL Correos electrónicos]** informa sobre el volumen y la eficacia del correo electrónico:
 
-* **Mosaicos**: tasa de apertura y tasa de clics, mostradas de forma predeterminada para que el rendimiento sea comparable entre campañas de distinto volumen. Seleccione el botón de alternancia para ver los recuentos sin procesar de correos electrónicos enviados, abiertos, pulsados y respondidos en su lugar.
+* **Mosaicos**: tasa de apertura y tasa de clics, mostradas de forma predeterminada para que el rendimiento sea comparable entre campañas de distinto volumen. Para ver los recuentos sin procesar de correos electrónicos enviados, abiertos, pulsados y respondidos, seleccione la opción.
 * **Gráfico de tendencias de correo electrónico semanal**: Actividad de correo electrónico por semana.
 * Tabla de rendimiento de correo electrónico por representante.
 
-El calificador de Marketo asigna estados independientes a las respuestas y devoluciones fuera de la oficina para que pueda distinguirlas del compromiso del cliente potencial.
+Marketo Qualifier asigna estados independientes a las respuestas y devoluciones fuera de la oficina para que pueda distinguirlas de la participación del cliente potencial.
 
 ### Pestaña Tareas
 
@@ -62,7 +62,7 @@ La ficha **[!UICONTROL Tareas]** informa sobre la divulgación manual:
 
 **[!UICONTROL Rendimiento de la campaña]** informa sobre los resultados salientes por campaña de flujo de trabajo saliente:
 
-* **Mosaicos KPI**: clientes potenciales activos, tasa de apertura, tasa de clics, tasa de respuesta y reuniones reservadas. El sistema muestra la tasa de apertura y clics de forma predeterminada, de modo que el rendimiento sea comparable entre campañas de distintos volúmenes. Seleccione el conmutador para ver los recuentos sin procesar en su lugar.
+* **Mosaicos KPI**: clientes potenciales activos, tasa de apertura, tasa de clics, tasa de respuesta y reuniones reservadas. El sistema muestra la tasa de apertura y clics de forma predeterminada, de modo que el rendimiento sea comparable entre campañas de distintos volúmenes. Para ver los recuentos sin procesar, seleccione la opción.
 * **Gráfico de tendencias de métricas de campaña**: KPI de campaña durante el período de tiempo seleccionado.
 * Tabla **[!UICONTROL Campañas]**: correo electrónico, reunión, llamada y actividad de mensaje de LinkedIn para cada campaña. Para ver los detalles de nivel representativo de una campaña, expanda su fila.
 

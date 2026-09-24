@@ -1,14 +1,24 @@
 ---
-title: Notas de la versión de Adobe Marketo Qualifier
-description: Descubra las novedades de Adobe Marketo Qualifier.
+title: Notas de la versión de [!DNL Adobe Marketo Qualifier]
+description: Descubra las novedades de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 12%
+source-wordcount: '390'
+ht-degree: 14%
 ---
-# Notas de la versión de Adobe Marketo Qualifier
+# Notas de la versión de [!DNL Adobe Marketo Qualifier]
+
+## 09-22-2026
+
+Esta versión incluye:
+
+* Vea [!DNL Marketo Sales Insights] y los datos agénticos en el complemento CRM incrustado y agregue clientes potenciales a [!DNL Marketo Qualifier]. [Más información](admin-settings.md#crm-mcp-and-the-embedded-plugin).
+* Priorice los posibles clientes de CRM con las opciones más probables, mi lista de observación, actividad web, participación por correo electrónico y actividad de seminario web. [Más información](admin-settings.md#prioritize-leads-in-the-crm-plugin).
+* Inscriba automáticamente a los posibles clientes en flujos de trabajo salientes cuando su actividad [!DNL Marketo] activa coincida con los criterios del flujo de trabajo. [Más información](home.md#automatically-enroll-prospects-from-marketing-highlights).
+* Revise el contexto del cliente potencial y exporte la lista de clientes potenciales y vea los resúmenes de personas de IA en [!DNL Marketo Optimizer] instancias de Prime y Ultimate. [Más información](prospects.md#review-prospect-context-and-export-the-list).
+* Revise y apruebe los correos electrónicos de clientes potenciales generados desde la cola de tareas y responda con sugerencias del agente durante un flujo de trabajo saliente. [Más información](tasks.md).
 
 ## 09-08-2026
 
@@ -21,11 +31,11 @@ Esta versión incluye:
 * Los correos electrónicos generados utilizan cualquier dato de cliente potencial adicional que importe y pueden escribirse de forma nativa en el idioma del cliente potencial. [Más información](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
 * Rendimiento saliente muestra la tasa de apertura y la tasa de clics de forma predeterminada, con un conmutador para los recuentos sin procesar y los prospectos totales en el nivel de organización. [Más información](performance.md).
 * Las reglas de sincronización de CRM actualizan automáticamente el estado de CRM a medida que un cliente potencial avanza por un flujo de trabajo saliente. [Más información](admin-settings.md#configure-crm-sync-rules).
-* Haga preguntas sobre el chat de IA en sus datos de Marketo Qualifier, CRM, [!DNL Marketo] y [!DNL Adobe Journey Optimizer B2B Edition]. [Más información](ai-assistant.md#ask-ai-chat-across-your-connected-data).
+* Haga preguntas sobre el chat de IA en sus datos de [!DNL Marketo Qualifier], CRM, [!DNL Marketo] y [!DNL Marketo Optimizer]. [Más información](ai-assistant.md#ask-ai-chat-across-your-connected-data).
 
 ## 08-17-2026
 
-[!DNL Marketo Qualifier] ya está disponible como una aplicación independiente. Es compatible con Marketo y Adobe Journey Optimizer B2B.
+[!DNL Marketo Qualifier] ya está disponible como una aplicación independiente. Admite [!DNL Marketo Engage] y [!DNL Marketo Optimizer].
 
 Esta versión incluye:
 

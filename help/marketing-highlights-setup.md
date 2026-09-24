@@ -1,6 +1,6 @@
 ---
 title: Configurar aspectos destacados de marketing
-description: Obtenga información sobre cómo conectar Marketo al calificador de Marketo de Adobe para que los representantes puedan ver y filtrar posibles clientes por actividad de Marketo en directo en Elementos destacados de marketing.
+description: Aprenda a conectar Marketo a Adobe Marketo Qualifier para que los representantes puedan ver y filtrar posibles clientes por actividad de Marketo en directo en Elementos destacados de marketing.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 product_v2:
@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 3%
 ---
 
@@ -35,7 +35,7 @@ Marketing Highlights muestra la actividad [!DNL Marketo] activa de cada posible 
 El programa de instalación consta de cuatro partes:
 
 * Parte A: Crear credenciales de API en Adobe Developer Console.
-* Parte B: Recopile el extremo y los identificadores del calificador de Adobe Marketo.
+* Parte B: Recopilar el extremo y los identificadores de Adobe Marketo Qualifier.
 * Parte C: Configurar un webhook en [!DNL Marketo Engage].
 * Parte D: Agregar el webhook a una campaña inteligente de déclencheur.
 
@@ -49,14 +49,14 @@ Para crear las credenciales:
 
 1. Vaya a la [consola de desarrollador de Adobe](https://developer.adobe.com/console/) e inicie sesión con su Adobe ID.
 1. Seleccione **[!UICONTROL Crear nuevo proyecto]** o abra un proyecto existente.
-1. Seleccione **[!UICONTROL Editar proyecto]**, cambie el nombre del proyecto a algo identificable, como `Marketo Qualifier Marketing Highlights`, y seleccione **[!UICONTROL Guardar]**.
+1. Para cambiar el nombre del proyecto, selecciona **[!UICONTROL Editar proyecto]**, escribe un nombre identificable como `Marketo Qualifier Marketing Highlights` y selecciona **[!UICONTROL Guardar]**.
 1. Seleccione **[!UICONTROL Agregar API]**, seleccione **[!UICONTROL API de Experience Platform]** y, a continuación, seleccione **[!UICONTROL Siguiente]**.
 1. Elija **[!UICONTROL Servidor a servidor OAuth]** como tipo de autenticación y, a continuación, seleccione **[!UICONTROL Siguiente]**.
 
-   **[!UICONTROL OAuth Server-to-Server]** permite que [!DNL Marketo] llame a la API calificadora de Marketo directamente desde su servidor, sin que sea necesario que una persona inicie sesión.
+   **[!UICONTROL OAuth Server-to-Server]** permite que [!DNL Marketo] llame a la API de Marketo Qualifier directamente desde su servidor, sin que sea necesario que una persona inicie sesión.
 
 1. Escriba un nombre de credencial de 45 caracteres o menos, como `Marketo Qualifier Marketing Highlights Creds`.
-1. Seleccione el perfil de producto que desea asociar y, a continuación, seleccione **[!UICONTROL Guardar la API configurada]**.
+1. Para asociar el perfil de producto, selecciónelo y después seleccione **[!UICONTROL Guardar la API configurada]**.
 1. En **[!UICONTROL Credenciales conectadas]**, abra la credencial **[!UICONTROL Servidor a servidor OAuth]**. Seleccione **[!UICONTROL Recuperar secreto de cliente]** y copie el **[!UICONTROL ID de cliente]** y el **[!UICONTROL Secreto de cliente]**. Estos valores se usan en [Parte C](#part-c-configure-the-marketo-webhook).
 
 >[!WARNING]
@@ -67,9 +67,9 @@ Para crear las credenciales:
 
 Necesita tres valores para [Parte C](#part-c-configure-the-marketo-webhook):
 
-* **URL de extremo**: la dirección del gancho web Marketo Qualifier de su región.
+* **URL de extremo**: la dirección del webhook de Marketo Qualifier para su región.
 * **imsOrg ID**: el identificador de su organización en Adobe Identity Management System (IMS), con el formato `{ORG_ID}@AdobeOrg`.
-* **Nombre de zona protegida**: El nombre de la zona protegida de AEP exactamente como aparece en la dirección URL del calificador de Marketo (el valor `sname`), no el nombre para mostrar mostrado en la interfaz de usuario. Utilice el valor de URL en minúsculas, por ejemplo `prod`, no `Prod`.
+* **Nombre de zona protegida**: El nombre de la zona protegida de AEP exactamente como aparece en la dirección URL de Marketo Qualifier (el valor `sname`), no el nombre para mostrar mostrado en la interfaz de usuario. Utilice el valor de URL en minúsculas, por ejemplo `prod`, no `Prod`.
 
 | Región | URL de extremo de webhook |
 | --- | --- |
@@ -170,7 +170,7 @@ Para crear el webhook:
 
 ## Parte D: Agregar el webhook a una campaña inteligente de déclencheur {#part-d-add-the-webhook-to-a-trigger-smart-campaign}
 
-Agregue un paso de flujo **[!UICONTROL Llamar al webhook]** a una campaña inteligente de déclencheur, ya sea una existente o una nueva. Los déclencheur de listas inteligentes de esa campaña deciden qué actividades se envían al calificador de Marketo.
+Agregue un paso de flujo **[!UICONTROL Llamar al webhook]** a una campaña inteligente de déclencheur, ya sea una existente o una nueva. Los déclencheur de listas inteligentes de esa campaña deciden qué actividades se envían a Marketo Qualifier.
 
 Para agregar el webhook:
 
@@ -179,7 +179,7 @@ Para agregar el webhook:
 1. En la ficha **[!UICONTROL Flujo]**, agregue un paso **[!UICONTROL Llamar al webhook]** y seleccione el webhook que creó en [Parte C](#part-c-configure-the-marketo-webhook).
 1. Active la campaña inteligente.
 
-La actividad de esa campaña inteligente ahora fluye al calificador de Marketo. Los representantes ven y filtran esta actividad en **[!UICONTROL Prospects]** > **[!UICONTROL Marketing Highlights]**.
+La actividad de esa campaña inteligente ahora fluye a Marketo Qualifier. Los representantes ven y filtran esta actividad en **[!UICONTROL Prospects]** > **[!UICONTROL Marketing Highlights]**.
 
 >[!MORELIKETHIS]
 >
