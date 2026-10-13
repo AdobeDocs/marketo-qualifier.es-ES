@@ -4,8 +4,8 @@ description: Obtenga información sobre cómo conectar Outlook, administrar cone
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User, Admin
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1456'
 ht-degree: 1%
 ---
 
@@ -192,7 +192,7 @@ La configuración de exclusión adjunta un pie de página para cancelar la suscr
 
 La configuración y la plantilla se guardan automáticamente.
 
-Cuando un cliente potencial selecciona el vínculo, Marketo Qualifier deja de enviarle correos electrónicos y sincroniza el estado de exclusión con el CRM conectado.
+Cuando un cliente potencial selecciona el vínculo, Marketo Qualifier deja de enviarle correos electrónicos y sincroniza el estado de exclusión con el CRM conectado. Marketo Qualifier también reconoce solicitudes claras de exclusión en la respuesta de correo electrónico de un cliente potencial, como &quot;por favor, deje de enviarme correos electrónicos&quot; o &quot;cancelar la suscripción&quot;, y marca al cliente potencial como excluido automáticamente. Se aplican el mismo estado **[!UICONTROL exclusión]** y el mismo distintivo, y no se envían más puntos de contacto. No se necesita ninguna configuración adicional. Las respuestas que no piden claramente detenerse, como &quot;no ahora mismo&quot;, no se tratan como exclusiones. Ver [solicitudes de exclusión en las respuestas](outbound-workflows.md#opt-out-requests-in-replies).
 
 ## Ámbito de acceso CRM
 

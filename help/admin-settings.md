@@ -3,20 +3,26 @@ title: Configuración de administración
 description: Obtenga información sobre cómo administrar campos CRM, sincronización de actividades, exclusión de correo electrónico y otras configuraciones de administración de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
-TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-    internal-label: Integrations
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-    internal-label: Administration
-
 internal-label: Administration
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+autotag-review: '2026-10-08T17:58:28.029Z'
+TQID: 'https://experienceleague.adobe.com/2eccZWj1XY7qP20n6GcnBe6PZwNkp0ALhZfOhljwZF8'
+product_v2:
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1292'
 ht-degree: 0%
 ---
 
@@ -138,7 +144,7 @@ Cada documento cargado también muestra su estado de procesamiento, como **[!UIC
 
 Cuando el manual está listo, los representantes pueden utilizarlo en dos lugares:
 
-* **Mensajes de correo electrónico salientes**: en un mensaje de punto de contacto, asigne un nombre al documento y describa el contexto que se va a utilizar. Por ejemplo, escriba `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulte [Generar y revisar puntos de contacto](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Mensajes de correo electrónico salientes**: en un mensaje de punto de contacto, asigne un nombre al documento y describa el contexto que se va a utilizar. Por ejemplo, escriba `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Consulte [Configurar puntos de contacto](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat de IA**: consulta el Centro de conocimiento en tu pregunta. Por ejemplo, escriba `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Consulte [Chat de IA](ai-assistant.md).
 
 En ambos casos, el contenido generado refleja la mensajería en su manual en lugar de la investigación genérica.
@@ -152,7 +158,7 @@ En ambos casos, el contenido generado refleja la mensajería en su manual en lug
 
 La configuración se guarda automáticamente.
 
-Cuando un cliente potencial selecciona el vínculo, Marketo Qualifier deja de enviarle correos electrónicos y sincroniza el estado de exclusión con el CRM conectado.
+Cuando un cliente potencial selecciona el vínculo, Marketo Qualifier deja de enviarle correos electrónicos y sincroniza el estado de exclusión con el CRM conectado. Marketo Qualifier también reconoce solicitudes claras de exclusión en la respuesta de correo electrónico de un cliente potencial, como &quot;por favor, deje de enviarme correos electrónicos&quot; o &quot;cancelar la suscripción&quot;, y marca al cliente potencial como excluido automáticamente. Se aplican el mismo estado **[!UICONTROL exclusión]** y el mismo distintivo, y no se envían más puntos de contacto. No se necesita ninguna configuración adicional. Las respuestas que no piden claramente detenerse, como &quot;no ahora mismo&quot;, no se tratan como exclusiones. Ver [solicitudes de exclusión en las respuestas](outbound-workflows.md#opt-out-requests-in-replies).
 
 ## Referencia: Parámetros de API de muestra
 
