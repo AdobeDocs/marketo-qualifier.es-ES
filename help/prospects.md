@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/zf2H5rq1JlIT26LqLPMrm2Mq3tSIrLOiTEw6BXb1w2U'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -15,9 +15,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2124387555f5fb08ea19eaf121fc87aa66d66de2
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '852'
 ht-degree: 1%
 ---
 
@@ -106,8 +106,12 @@ Para abrir el perfil de un cliente potencial, seleccione el cliente potencial. R
 
 Además del resumen de la persona de IA permanente, puede generar una preparación de reunión adaptada a una llamada específica desde la pestaña **[!UICONTROL Investigación de la reunión]**, junto a **[!UICONTROL Investigación de la cuenta]**.
 
+La preparación para la reunión combina la investigación web sobre el cliente potencial y su compañía con la evidencia de estudios de casos sobre clientes de igual a igual que utilizan el producto que está vendiendo. Los puntos de conversación del caso práctico pueden incluir resultados medibles para los clientes. Las fuentes se combinan en un solo resumen, con puntos de conversación clasificados por relevancia. Cada tema de conversación identifica si proviene de estudios de casos, investigación web o ambos. Si no hay evidencia relevante de estudio de caso disponible, la preparación de la reunión utiliza la investigación web.
+
 * **Basado en objetivos**: si el cliente potencial está inscrito en un flujo de trabajo saliente en ejecución, selecciónelo. La preparación se alinea con el objetivo de ese flujo de trabajo saliente, como reservar una reunión o volver a atraer al posible cliente.
 * **Mensaje personalizado**: escriba para qué desea prepararse, por ejemplo `Focus on renewal risk` o `Prepare for a technical deep dive with their IT lead`. La preparación coincide con el mensaje. La opción de mensaje personalizado está disponible siempre que el cliente potencial no esté en un flujo de trabajo saliente en ejecución.
+
+La información sigue la meta del flujo de trabajo saliente o la petición de datos personalizada que elija. La forma de generar la preparación de la reunión no cambia.
 
 >[!MORELIKETHIS]
 >

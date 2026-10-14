@@ -1,14 +1,24 @@
 ---
-title: Notas de la versión de [!DNL Adobe Marketo Qualifier]
+title: '[!DNL Adobe Marketo Qualifier] notas de la versión'
 description: Descubra las novedades de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 14%
+source-wordcount: '532'
+ht-degree: 12%
 ---
-# Notas de la versión de [!DNL Adobe Marketo Qualifier]
+# [!DNL Adobe Marketo Qualifier] notas de la versión
+
+## 10-08-2026
+
+Esta versión incluye:
+
+* Reutilice un flujo de trabajo saliente o cambie los puntos de contacto de un flujo de trabajo en ejecución, duplíquelo y edite la copia. La copia comienza como borrador privado sin perspectivas y el flujo de trabajo original no cambia. [Más información](outbound-workflows.md#duplicate-an-outbound-workflow).
+* Configure los flujos de trabajo salientes en un diseño compacto con navegación entre el objetivo, el objetivo, los puntos de contacto y la configuración. [Más información](outbound-workflows.md#create-an-outbound-workflow).
+* Las solicitudes de borrado de exclusión en las respuestas de correo electrónico se reconocen automáticamente. El cliente potencial se marca como excluido y no se envían más puntos de contacto. [Más información](outbound-workflows.md#opt-out-requests-in-replies).
+* Prepárese para reuniones con una sola información que combine investigación web y estudios de casos de clientes específicos de productos, con puntos de conversación clasificados por relevancia y fuentes identificadas. [Más información](prospects.md#generate-meeting-prep).
+* Los correos electrónicos generados se contrastan con las directrices de calidad y se reescriben cuando es necesario antes de revisarlos. Aún puede revisar, editar y aprobar cada correo electrónico antes de enviarlo. [Más información](outbound-workflows.md#review-and-refine-generated-emails).
 
 ## 09-22-2026
 
