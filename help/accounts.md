@@ -13,15 +13,17 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: 30abc8c57bb9b7a57f68c8e7daecc1bf3ac36567
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '703'
 ht-degree: 0%
 ---
 
 # Cuentas
 
 La vista de cuentas combina investigación generada por IA, noticias recientes, oportunidades abiertas, valor de la canalización y contactos comprometidos. Utilice esta información para comprender y priorizar una cuenta antes de establecer contacto.
+
+Para buscar y priorizar varias cuentas a la vez, usa [Audiencia inteligente (Beta)](smart-audience.md). Cree una lista de cuentas, aclare la lista con datos CRM y señales de crecimiento y busque posibles clientes para agregarlos a un flujo de trabajo saliente.
 
 ## Abrir una cuenta
 
@@ -66,7 +68,9 @@ Utilice los botones que aparecen debajo de la descripción general para cambiar 
 | **[!UICONTROL Miembros principales]** | Los contactos más comprometidos de la cuenta, clasificados por participación. Cada contacto muestra su cargo, dirección de correo electrónico, puntuación de participación e indicador de urgencia. |
 | **[!UICONTROL Datos de intención]** | Las señales de intención de compra para la cuenta, como los productos y temas que está investigando la cuenta. |
 | **[!UICONTROL Miembros del equipo de cuenta]** | Personas asignadas a la cuenta, con su correo electrónico, cargo, territorio y grupo de productos. |
-| **[!UICONTROL Campos CRM]** | Campos de cuenta importados desde CRM, según la configuración de asignación de entrada. Consulte [Integraciones](integrations.md#map-crm-fields-inbound-mapping). |
+| **[!UICONTROL Campos CRM]** | Campos de cuenta importados desde CRM, según la configuración de asignación de entrada. |
+
+Los campos que un administrador hace que se puedan filtrar también se pueden utilizar para filtrar contactos por su cuenta asociada y definir los criterios de segmentación del flujo de trabajo saliente. Consulte [Integraciones](integrations.md#map-crm-fields-inbound-mapping).
 
 Desde la vista **[!UICONTROL Miembros principales]**, realice cualquiera de estas acciones para un contacto:
 

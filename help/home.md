@@ -17,10 +17,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 18%
+source-wordcount: '517'
+ht-degree: 17%
 ---
 
 # [!DNL Adobe Marketo Qualifier]
@@ -32,6 +32,7 @@ La aplicación forma parte de la familia de productos [!DNL Marketo], junto con 
 ## Qué puede hacer en [!DNL Marketo Qualifier]
 
 * **Priorice clientes potenciales y cuentas** con resúmenes de actividad generados por IA y priorización basada en señales.
+* **Cree listas de objetivos con [audiencia inteligente (Beta)](smart-audience.md)** describiendo las cuentas en lenguaje sencillo, agregando datos de CRM y señales de crecimiento, y revisando los posibles clientes puntuados para un flujo de trabajo saliente.
 * **Cree flujos de trabajo salientes impulsados por objetivos** en los que AI proponga una cadencia y redacte correos electrónicos personalizados para cada posible cliente.
 * **Proximidad del proceso en una cola** para llamadas telefónicas, LinkedIn InMails y revisiones de correo electrónico.
 * **Reserve reuniones automáticamente** conectando su calendario e insertando un enlace personal de reserva en su cadencia.
@@ -39,7 +40,7 @@ La aplicación forma parte de la familia de productos [!DNL Marketo], junto con 
 * **Haga preguntas en lenguaje natural** con el chat de IA, que usa sus datos de CRM, participación y centro de conocimiento.
 * **Rastree el rendimiento de las actividades de extensión** con informes de correo electrónico y de reserva de reuniones.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476564?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3476550)
 
 ## Uso de la página principal
 
@@ -51,7 +52,7 @@ La página de inicio también muestra las próximas tareas y los flujos de traba
 
 ::::landing-cards-container
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introducción
 
@@ -61,7 +62,7 @@ Complete la configuración de administrador única para grupos de usuarios y una
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Clientes potenciales
 
@@ -71,7 +72,7 @@ Genere, filtre y revise su lista de clientes potenciales.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Cuentas
 
@@ -81,7 +82,17 @@ Priorice el alcance con los datos de participación y canalización a nivel de c
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Audiencia inteligente (Beta)
+
+Cree y priorice listas de cuenta y posibles clientes y, a continuación, añada los posibles clientes seleccionados a un flujo de trabajo saliente.
+
+[Audiencia inteligente (Beta)](smart-audience.md)
+:::
+
+:::card
+![icono](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Flujos de trabajo salientes
 
@@ -91,7 +102,7 @@ Cree cadencias dirigidas por objetivos con correos electrónicos personalizados 
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Tareas
 
@@ -101,7 +112,7 @@ Procesar llamadas telefónicas, LinkedIn InMail y tareas de revisión de correo 
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Desempeño
 
@@ -111,7 +122,7 @@ Revisar el rendimiento de correo electrónico y reserva de reuniones.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro de información
 
@@ -121,7 +132,7 @@ Cree un manual que apoye el alcance y la asistencia de la IA en sus materiales.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integraciones
 
@@ -131,7 +142,7 @@ Conecte Salesforce o Microsoft Dynamics 365 y asigne los campos.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Configuración de perfil
 
@@ -141,7 +152,7 @@ Configure la disponibilidad del correo electrónico, la firma y el calendario.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat de IA
 

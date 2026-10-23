@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1510'
 ht-degree: 1%
 ---
 
@@ -147,9 +147,11 @@ La asignación de entrada controla qué campos CRM importa Marketo Qualifier y d
 
 1. Escriba un **[!UICONTROL nombre de sección]** y una **[!UICONTROL descripción]** opcional. A continuación, seleccione **[!UICONTROL Siguiente]**.
 1. En el paso **[!UICONTROL Agregar campo]**, para importar campos CRM, búsquelos y selecciónelos. A continuación, para continuar, seleccione **[!UICONTROL Siguiente]**. Cada campo muestra su **[!UICONTROL nombre para mostrar]**, **[!UICONTROL nombre de campo]** y **[!UICONTROL tipo de datos]**.
-1. Para las secciones **[!UICONTROL Posibles clientes]**, **[!UICONTROL Contactos]** y **[!UICONTROL Oportunidades]**, active **[!UICONTROL Filtrable]** para cada campo que necesiten los representantes en la lista [Posibles clientes](prospects.md).
+1. Para las secciones **[!UICONTROL Clientes potenciales]**, **[!UICONTROL Contactos]**, **[!UICONTROL Cuentas]** y **[!UICONTROL Oportunidades]**, active **[!UICONTROL Filtrable]** para cada campo que necesiten los representantes en la lista [Clientes potenciales](prospects.md#filter-and-find-prospects) o en [Segmentación del flujo de trabajo saliente](outbound-workflows.md#step-2-configure-targeting-filters).
 
    Un campo no se puede convertir en filtrable si su tipo de datos no admite el filtrado o si ya se utiliza en otra sección.
+
+   Los campos de cuenta filtrables permiten a los representantes filtrar los contactos por los atributos de su cuenta asociada, como sector, región o tipo de cuenta. Pueden combinar filtros de cuenta, contacto y oportunidad para definir qué contactos cumplen los requisitos para un flujo de trabajo saliente. El filtrado de campos de cuenta está disponible para Salesforce y Microsoft Dynamics 365.
 
    En **[!UICONTROL Mis contactos de oportunidad]**, los campos de oportunidad que se pueden filtrar aparecen como columnas independientes con etiquetas como **[!UICONTROL Fase (oportunidad)]**. El sufijo distingue los atributos de oportunidad de los campos del contacto asociado.
 
