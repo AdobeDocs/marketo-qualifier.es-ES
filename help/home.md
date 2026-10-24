@@ -17,10 +17,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 18%
+source-wordcount: '517'
+ht-degree: 17%
 ---
 
 # [!DNL Adobe Marketo Qualifier]
@@ -32,6 +32,7 @@ La aplicación forma parte de la familia de productos [!DNL Marketo], junto con 
 ## Qué puede hacer en [!DNL Marketo Qualifier]
 
 * **Priorice clientes potenciales y cuentas** con resúmenes de actividad generados por IA y priorización basada en señales.
+* **Cree listas de objetivos con [audiencia inteligente (Beta)](smart-audience.md)** describiendo las cuentas en lenguaje sencillo, agregando datos de CRM y señales de crecimiento, y revisando los posibles clientes puntuados para un flujo de trabajo saliente.
 * **Cree flujos de trabajo salientes impulsados por objetivos** en los que AI proponga una cadencia y redacte correos electrónicos personalizados para cada posible cliente.
 * **Proximidad del proceso en una cola** para llamadas telefónicas, LinkedIn InMails y revisiones de correo electrónico.
 * **Reserve reuniones automáticamente** conectando su calendario e insertando un enlace personal de reserva en su cadencia.
@@ -78,6 +79,16 @@ Cuentas
 Priorice el alcance con los datos de participación y canalización a nivel de cuenta.
 
 [Cuentas](accounts.md)
+:::
+
+:::card
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+
+Audiencia inteligente (Beta)
+
+Cree y priorice listas de cuenta y posibles clientes y, a continuación, añada los posibles clientes seleccionados a un flujo de trabajo saliente.
+
+[Audiencia inteligente (Beta)](smart-audience.md)
 :::
 
 :::card

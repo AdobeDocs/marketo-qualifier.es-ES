@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2776'
 ht-degree: 0%
 ---
 
@@ -93,6 +93,8 @@ Describa a su posible cliente ideal en lenguaje natural. Por ejemplo, escriba `H
 
 Los objetivos pueden utilizar el tipo de actividad, la puntuación, la clasificación y otros atributos disponibles. Combine criterios con [!DNL AND] o [!DNL OR] y use operadores como igual a, contiene, mayor que, menor que y entre.
 
+Para Salesforce y Microsoft Dynamics 365, la segmentación también puede combinar campos de cuenta, contacto y oportunidad que un administrador hace que se puedan filtrar en [asignación entrante](integrations.md#map-crm-fields-inbound-mapping). Por ejemplo, combine la función de un contacto con el sector de su cuenta asociada y la fase de una oportunidad para dirigirse a los contactos adecuados.
+
 ### Inscribir automáticamente a los posibles clientes desde Marketing destacado
 
 Un flujo de trabajo saliente puede evaluar la actividad de elementos destacados de marketing en directo según sus criterios de objetivo. Cuando la actividad coincide, [!DNL Marketo Qualifier] resuelve el propietario de CRM del cliente potencial por correo electrónico e inscribe al cliente potencial solamente en un flujo de trabajo elegible que pertenece a ese representante.
@@ -161,6 +163,8 @@ Un administrador configura el pie de página de exclusión de forma global, que 
 ### Añadir clientes potenciales e iniciar la generación de correo electrónico {#step-5-add-prospects-and-start-email-generation}
 
 Después de guardar, agregue posibles clientes desde la vista de selección. Se aplican los filtros de objetivo configurados.
+
+También puede agregar posibles clientes a un flujo de trabajo saliente existente desde una [lista de audiencia inteligente (Beta)](smart-audience.md#add-leads-to-an-outbound-workflow). Revise los posibles clientes y el flujo de trabajo seleccionados antes de confirmar. La adición de posibles clientes no reemplaza los pasos de revisión y aprobación de correo electrónico que se describen a continuación.
 
 1. Revise la lista.
 

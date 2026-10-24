@@ -16,9 +16,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '754'
 ht-degree: 1%
 ---
 
@@ -58,7 +58,7 @@ Utilice el chat de IA para estos tipos de tareas:
 
 ## Consulte AI Chat en sus datos conectados
 
-El chat de IA puede responder a preguntas sobre los datos de inteligencia de su empresa, [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] y. Haga una pregunta en lenguaje sencillo para buscar información o recuperar contexto. AI Chat lee e informa sobre sus datos; no crea, edita ni inicia nada.
+El chat de IA puede responder a preguntas sobre los datos de inteligencia de su empresa, [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] y. Haga una pregunta en lenguaje sencillo para buscar información o recuperar contexto. Estas búsquedas de datos conectados leen los datos e informan sobre ellos; no crean, editan ni inician programas o campañas.
 
 A continuación se muestran algunos ejemplos de indicadores. Cuanto más específico sea en el mensaje, más centrados estarán los resultados.
 
@@ -106,7 +106,8 @@ Inteligencia de la empresa:
 
 ### Alcance y límites actuales
 
-* AI Chat lee e informa sobre sus datos. No crea, edita ni inicia nada. Por ejemplo, no crea un programa, no inicia una campaña ni edita una lista.
+* Las búsquedas de datos conectadas leen sus datos e informan sobre ellos. No crean un programa, inician una campaña ni editan un registro CRM.
+* En [Audiencia inteligente (Beta)](smart-audience.md), el chat admite acciones en la lista de audiencias, como guardar una lista, agregar columnas de información, filtrar y priorizar cuentas y posibles clientes, y agregar posibles clientes seleccionados a un flujo de trabajo saliente existente. Esto no escribe en CRM ni reemplaza la revisión y aprobación por correo electrónico.
 * AI Chat busca información; no es una herramienta de creación de informes. No genera análisis ni tendencias del estilo [!DNL Marketo] a lo largo del tiempo, como el estado del correo electrónico del trimestre o una lista de posibles clientes creados en los últimos 10 días. Use los informes [!DNL Marketo] nativos para estas tareas.
 
 ## Respuestas básicas en su guía de estrategias
