@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1063'
 ht-degree: 0%
 ---
 
@@ -179,6 +179,8 @@ Después de conectar el CRM, configure la asignación de entrada para determinar
 Consulte [Asignar campos CRM (asignación entrante)](integrations.md#map-crm-fields-inbound-mapping) para ver los pasos completos, incluido cómo hacer que los campos importados estén disponibles como filtros.
 
 ## Próximos pasos
+
+Los administradores pueden [instalar el complemento CRM](crm-plugin-setup.md) de forma opcional para que los representantes puedan usar las perspectivas de Marketo Qualifier dentro de Salesforce o Microsoft Dynamics 365. En Salesforce, los administradores también pueden agregar acciones para flujos de trabajo salientes y campañas de Marketo a las vistas de lista de posibles clientes y contactos y a las páginas de registro.
 
 >[!MORELIKETHIS]
 >

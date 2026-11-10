@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '554'
 ht-degree: 17%
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 17%
 
 [!DNL Adobe Marketo Qualifier] es una aplicación con tecnología de IA que automatiza la calificación de clientes potenciales, la divulgación y la participación de compradores en canales múltiples para los representantes de desarrollo empresarial (BDR). Account Qualification Agent analiza sus cuentas y clientes potenciales, prioriza las que están listas para el siguiente paso y elabora un alcance personalizado basado en sus datos CRM.
 
-La aplicación forma parte de la familia de productos [!DNL Marketo], junto con [!DNL Marketo Engage], [!DNL Marketo Optimizer] y [!DNL Marketo Measure]. Los BDR pueden utilizar los complementos de explorador y correo electrónico para acceder a inteligencia empresarial directamente desde su CRM o Outlook.
+La aplicación forma parte de la familia de productos [!DNL Marketo], junto con [!DNL Marketo Engage], [!DNL Marketo Optimizer] y [!DNL Marketo Measure]. Los BDR pueden usar el [complemento CRM](crm-plugin-setup.md) para obtener acceso a inteligencia empresarial directamente desde Salesforce o Microsoft Dynamics 365, y el complemento de correo electrónico para obtener acceso a él desde Outlook.
 
 ## Qué puede hacer en [!DNL Marketo Qualifier]
 
@@ -143,6 +143,16 @@ Integraciones
 Conecte Salesforce o Microsoft Dynamics 365 y asigne los campos.
 
 [Integraciones](integrations.md)
+:::
+
+:::card
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+
+Configuración del complemento CRM
+
+Instale el complemento CRM y configure las acciones de Salesforce para flujos de trabajo salientes y campañas de Marketo.
+
+[Incrustar Marketo Qualifier en el CRM](crm-plugin-setup.md)
 :::
 
 :::card

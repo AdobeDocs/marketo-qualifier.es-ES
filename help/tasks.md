@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
     internal-label: Customer engagement
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1105'
 ht-degree: 0%
 ---
 
@@ -109,7 +109,7 @@ Las tareas completadas, omitidas y canceladas son finales. Sus acciones ya no es
 
 ## Sugerencias del agente
 
-La pestaña **[!UICONTROL Sugerencias del agente]** enumera los posibles clientes que coinciden con los criterios de segmentación de un flujo de trabajo saliente y se recomiendan para la inscripción. Para activar las recomendaciones, consulte [Flujos de trabajo salientes](outbound-workflows.md).
+La pestaña **[!UICONTROL Sugerencias del agente]** enumera los posibles clientes recomendados para la inscripción mediante el conjunto completo de [filtros de direccionamiento de flujo de trabajo de salida](outbound-workflows.md#step-2-configure-targeting-filters) configurados. Para activar las recomendaciones, consulte [Flujos de trabajo salientes](outbound-workflows.md).
 
 Para revisar una sugerencia en el panel de trabajo, selecciónela:
 
@@ -139,6 +139,8 @@ Los mensajes sobre los precios, los requisitos legales o de seguridad, las respu
 1. Abra la sugerencia de respuesta, revise el hilo completo y la respuesta del borrador.
 1. Para crear otro borrador, edite la respuesta o seleccione **[!UICONTROL Generar con IA]**.
 1. Para enviar la respuesta y continuar con el flujo de trabajo saliente del cliente potencial, seleccione **[!UICONTROL Aprobar y enviar]**.
+
+También puede [revisar, editar, enviar o rechazar respuestas de borradores de inteligencia artificial](outbound-workflows.md#review-and-send-ai-draft-replies) desde la vista **[!UICONTROL Perspectivas comprometidas]** del flujo de trabajo saliente.
 
 ## Completar tareas desde un flujo de trabajo saliente
 

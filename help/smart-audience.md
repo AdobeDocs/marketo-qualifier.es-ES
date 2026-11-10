@@ -4,10 +4,10 @@ description: Aprenda a utilizar la audiencia inteligente (Beta) para crear lista
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 badgeBeta: label="Beta" type="Informative"
-source-git-commit: bf94a2d28913093923f446025405339e4e64919c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 1%
+source-wordcount: '1313'
+ht-degree: 0%
 ---
 
 # Audiencia inteligente (Beta)
@@ -17,6 +17,8 @@ La audiencia inteligente (Beta) le ayuda a encontrar las cuentas y las personas 
 Trabaje en la vista de lista con su cuadrícula, filtros y botones, o utilice el gráfico para describir lo que desea. Ambos funcionan en la misma lista: los cambios en uno aparecen en el otro. Si no aparece un cambio de inmediato, seleccione **[!UICONTROL Actualizar]**.
 
 El rastreador de progreso de la parte superior de cada lista muestra tres fases: **[!UICONTROL Crear lista de audiencia inteligente]**, **[!UICONTROL Priorizar posibles clientes]** y **[!UICONTROL Agregar a flujo de trabajo saliente]**.
+
+La página de aterrizaje incluye un ejemplo de reproducción automática del flujo completo de cinco pasos, desde la descripción de cuentas hasta la adición de posibles clientes a un flujo de trabajo saliente. El tutorial **[!UICONTROL Cómo funciona]** explica el recorrido paso a paso y se abre automáticamente cuando no hay listas. Puede omitir el tutorial y volver a abrirlo en cualquier momento seleccionando **[!UICONTROL Cómo funciona]**.
 
 ## Antes de empezar
 
@@ -29,7 +31,10 @@ Puede crear hasta 100 listas. Cada lista tiene hasta 500 cuentas y 2.000 posible
 Comience con una descripción de las cuentas a las que desee llegar. La vista previa no guarda una lista.
 
 1. Abra **[!UICONTROL Audiencia inteligente]** y seleccione **[!UICONTROL Nueva audiencia inteligente]** o **[!UICONTROL Crear lista]**.
-1. En el chat, describa las cuentas que desee. Por ejemplo, escriba `Find healthcare accounts with revenue over $50M`.
+1. Utilice las opciones de adición rápida y las indicaciones de ejemplo de la página de creación de audiencias para iniciar la solicitud, o describa las cuentas que desee en el chat.
+
+   Por ejemplo, escriba `Find healthcare accounts with revenue over $50M`.
+
 1. Revise el número de cuentas coincidentes y el ejemplo en la vista previa.
 
 Su solicitud puede incluir estos criterios:
@@ -58,6 +63,8 @@ Guarde la vista previa cuando coincida con la audiencia a la que va dirigida.
 1. Cuando la previsualización esté lista, pida al chat que la guarde como lista y que le asigne un nombre.
 1. Revise las cuentas guardadas en la ficha **[!UICONTROL Cuentas]**.
 
+Las listas guardadas aparecen como tarjetas con detalles de cuenta, posible cliente y enriquecimiento para ayudarle a elegir la lista que desea abrir.
+
 Puede cambiar el nombre de una lista desde su página. Para eliminar una lista, ábrala y seleccione **[!UICONTROL Eliminar lista de audiencias inteligentes]**.
 
 >[!CAUTION]
@@ -82,7 +89,9 @@ Para agregar señales de crecimiento, selecciona **[!UICONTROL Enriquecer cuenta
 
 Por ejemplo, escriba `Which of these accounts have raised funding recently?` o `Which of these accounts have had layoffs?`.
 
-En listas grandes, agregar una señal puede tardar unos minutos. Siga el progreso mostrado en la lista, revise cada nueva columna y manténgala o deséchela.
+En listas grandes, agregar una señal puede tardar unos minutos. Siga el progreso mostrado en la lista, revise cada nueva columna y manténgala o deséchela. Después de agregar una columna de enriquecimiento, seleccione **[!UICONTROL Mostrar columna]** para que sea visible. La columna se resalta brevemente para que pueda encontrarla sin cambiar el orden de las columnas.
+
+Las fichas **[!UICONTROL Cuentas]** y **[!UICONTROL Posibles clientes]** muestran sus recuentos de registros. La columna **[!UICONTROL Cuenta]** permanece a la vista mientras se desplaza horizontalmente por la lista.
 
 Para reducir y priorizar las cuentas:
 
@@ -109,9 +118,13 @@ Para una solicitud de chat, ingrese `Find VP and Director level people at these 
 
 Revise los resultados de la ficha **[!UICONTROL Posibles clientes]**. Cada posible cliente muestra su nombre, título, cuenta, correo electrónico, propietario y puntuación. Filtre por antigüedad, si hay una dirección de correo electrónico disponible, puntuación mínima o máxima, o si el posible cliente está en un flujo de trabajo. La columna **[!UICONTROL Razonamiento]** explica por qué cada posible cliente se clasifica donde está.
 
+Si la ficha **[!UICONTROL Posibles clientes]** está vacía, siga sus instrucciones para buscar posibles clientes para las cuentas preseleccionadas.
+
 ### Cómo funcionan las puntuaciones
 
 Las puntuaciones van del 0 al 100. Una puntuación más alta indica un mejor ajuste y una mayor disposición para participar. Los mismos datos producen la misma puntuación.
+
+Las puntuaciones están codificadas por colores para ayudar a que las coincidencias más sólidas destaquen. Revise la puntuación numérica y el razonamiento al comparar cuentas o posibles clientes, en lugar de depender solo del color.
 
 Una puntuación combina:
 

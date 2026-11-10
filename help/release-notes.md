@@ -1,5 +1,5 @@
 ---
-title: Notas de la versión de [!DNL Adobe Marketo Qualifier]
+title: '[!DNL Adobe Marketo Qualifier] notas de la versión'
 description: Descubra las novedades de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
@@ -9,15 +9,20 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 11%
+source-wordcount: '767'
+ht-degree: 10%
 ---
 # Notas de la versión de [!DNL Adobe Marketo Qualifier]
 
 ## Próxima versión
 
+* Describa a quién desea llegar en un lenguaje sencillo y conviértalo en filtros de contactos y posibles clientes de CRM, utilice todos los filtros de contactos y posibles clientes en los objetivos de flujo de trabajo saliente y obtenga una vista previa de los posibles clientes antes de guardar. [Más información](outbound-workflows.md#step-2-configure-targeting-filters).
+* Filtre los posibles clientes por varios valores a la vez en campos de texto como Título del trabajo y Correo electrónico, con hasta cinco valores por filtro. [Más información](prospects.md#filter-and-find-prospects).
+* Revise, edite y envíe respuestas de borrador de IA a respuestas de clientes potenciales directamente desde un flujo de trabajo saliente, o rechace borradores que no caben. [Más información](outbound-workflows.md#review-and-send-ai-draft-replies).
+* Instale [!DNL Adobe Marketo Qualifier] en Salesforce o Microsoft Dynamics 365 y agregue clientes potenciales a flujos de trabajo salientes o campañas de Marketo desde las vistas de lista y las páginas de registro de Salesforce. [Más información](crm-plugin-setup.md).
+* Empiece más rápido con la audiencia inteligente (Beta): un tutorial guiado, opciones de adición rápida al crear una audiencia y listas más claras con recuentos de registros, una columna Cuenta que permanece en la vista y puntuaciones codificadas por colores. [Más información](smart-audience.md).
 * Encuentre y priorice las cuentas y los posibles clientes adecuados con Audiencia inteligente (Beta). Describa las cuentas que desea en un lenguaje sencillo, añada datos de CRM y señales de crecimiento, revise los posibles clientes puntuados y agréguelas a un flujo de trabajo saliente. [Más información](smart-audience.md).
 * Filtre los contactos por campos de cuenta, junto con los campos de contacto y oportunidad, para encontrar los contactos adecuados y segmentar los flujos de trabajo salientes de forma más precisa. [Más información](prospects.md#filter-and-find-prospects).
 * Los contactos muestran su cuenta asociada y su nombre de propietario, y la página de un cliente potencial ahora muestra 90 días de actividad de marketing, frente a los 30 anteriores. [Más información](prospects.md#review-prospect-details).
