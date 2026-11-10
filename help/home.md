@@ -21,9 +21,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '554'
 ht-degree: 17%
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 17%
 
 [!DNL Adobe Marketo Qualifier] es una aplicación con tecnología de IA que automatiza la calificación de clientes potenciales, la divulgación y la participación de compradores en canales múltiples para los representantes de desarrollo empresarial (BDR). Account Qualification Agent analiza sus cuentas y clientes potenciales, prioriza las que están listas para el siguiente paso y elabora un alcance personalizado basado en sus datos CRM.
 
-La aplicación forma parte de la familia de productos [!DNL Marketo], junto con [!DNL Marketo Engage], [!DNL Marketo Optimizer] y [!DNL Marketo Measure]. Los BDR pueden utilizar los complementos de explorador y correo electrónico para acceder a inteligencia empresarial directamente desde su CRM o Outlook.
+La aplicación forma parte de la familia de productos [!DNL Marketo], junto con [!DNL Marketo Engage], [!DNL Marketo Optimizer] y [!DNL Marketo Measure]. Los BDR pueden usar el [complemento CRM](crm-plugin-setup.md) para obtener acceso a inteligencia empresarial directamente desde Salesforce o Microsoft Dynamics 365, y el complemento de correo electrónico para obtener acceso a él desde Outlook.
 
 ## Qué puede hacer en [!DNL Marketo Qualifier]
 
@@ -44,7 +44,7 @@ La aplicación forma parte de la familia de productos [!DNL Marketo], junto con 
 * **Haga preguntas en lenguaje natural** con el chat de IA, que usa sus datos de CRM, participación y centro de conocimiento.
 * **Rastree el rendimiento de las actividades de extensión** con informes de correo electrónico y de reserva de reuniones.
 
->[!VIDEO](https://video.tv.adobe.com/v/3505352?captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3505339)
 
 ## Uso de la página principal
 
@@ -56,7 +56,7 @@ La página de inicio también muestra las próximas tareas y los flujos de traba
 
 ::::landing-cards-container
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Introducción
 
@@ -66,7 +66,7 @@ Complete la configuración de administrador única para grupos de usuarios y una
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Clientes potenciales
 
@@ -76,7 +76,7 @@ Genere, filtre y revise su lista de clientes potenciales.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Cuentas
 
@@ -86,7 +86,7 @@ Priorice el alcance con los datos de participación y canalización a nivel de c
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Audiencia inteligente (Beta)
 
@@ -96,7 +96,7 @@ Cree y priorice listas de cuenta y posibles clientes y, a continuación, añada 
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Flujos de trabajo salientes
 
@@ -106,7 +106,7 @@ Cree cadencias dirigidas por objetivos con correos electrónicos personalizados 
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Tareas
 
@@ -116,7 +116,7 @@ Procesar llamadas telefónicas, LinkedIn InMail y tareas de revisión de correo 
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Desempeño
 
@@ -126,7 +126,7 @@ Revisar el rendimiento de correo electrónico y reserva de reuniones.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centro de información
 
@@ -136,7 +136,7 @@ Cree un manual que apoye el alcance y la asistencia de la IA en sus materiales.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Integraciones
 
@@ -146,7 +146,17 @@ Conecte Salesforce o Microsoft Dynamics 365 y asigne los campos.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Configuración del complemento CRM
+
+Instale el complemento CRM y configure las acciones de Salesforce para flujos de trabajo salientes y campañas de Marketo.
+
+[Incrustar Marketo Qualifier en el CRM](crm-plugin-setup.md)
+:::
+
+:::card
+![icono](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Configuración de perfil
 
@@ -156,7 +166,7 @@ Configure la disponibilidad del correo electrónico, la firma y el calendario.
 :::
 
 :::card
-![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=es)
+![icono](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Chat de IA
 

@@ -21,9 +21,9 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '3086'
 ht-degree: 0%
 ---
 
@@ -82,20 +82,21 @@ La IA conserva los requisitos en el objetivo exactamente en los puntos de contac
 
 Los filtros de segmentación definen qué clientes potenciales son aptos. Cuando se agregan perspectivas más adelante, sólo aparecen en la lista de selección los posibles clientes que coinciden con estos filtros.
 
-![Filtros de segmentación](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
+Describa los posibles clientes o contactos de CRM a los que desea ponerse en contacto en un lenguaje sencillo. Por ejemplo, escriba `Contacts with open opportunities closing in the next 30 days` o use un mensaje de ejemplo integrado para comenzar. [!DNL Adobe Marketo Qualifier] convierte la descripción en filtros que puede revisar y editar antes de guardar. Si parte de la descripción no se puede convertir en un filtro, se marca para que pueda revisar la condición en lugar de ignorarla sin saberlo.
 
-Describa a su posible cliente ideal en lenguaje natural. Por ejemplo, escriba `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] convierte la descripción en criterios de segmentación que puede revisar y perfeccionar.
+El generador de filtros usa la misma experiencia que [Filtros de resaltados de marketing](prospects.md#filter-by-marketing-highlights) en la página de clientes potenciales. Utilícela para agregar, editar o borrar condiciones.
 
-1. Para abrir la lista **[!UICONTROL Agregar un filtro]**, seleccione la flecha hacia abajo y, a continuación, seleccione un filtro.
-
-1. Establezca valores para el filtro.
-1. Añada más filtros si necesita reducir la audiencia.
-
-1. Continúe con los puntos de contacto.
+1. Revise los filtros generados a partir de la descripción o seleccione un filtro para añadir una condición manualmente.
+1. Elija el operador e introduzca o seleccione los valores para cada condición.
+1. Añada, edite o borre condiciones para restringir la audiencia.
+1. Seleccione **[!UICONTROL Previsualizar posibles clientes]** o **[!UICONTROL Previsualizar contactos]** para ver qué posibles clientes coinciden.
+1. Revise la vista previa y ajuste los filtros si es necesario antes de continuar a los puntos de contacto.
 
 Los objetivos pueden utilizar el tipo de actividad, la puntuación, la clasificación y otros atributos disponibles. Combine criterios con [!DNL AND] o [!DNL OR] y use operadores como igual a, contiene, mayor que, menor que y entre.
 
-Para Salesforce y Microsoft Dynamics 365, la segmentación también puede combinar campos de cuenta, contacto y oportunidad que un administrador hace que se puedan filtrar en [asignación entrante](integrations.md#map-crm-fields-inbound-mapping). Por ejemplo, combine la función de un contacto con el sector de su cuenta asociada y la fase de una oportunidad para dirigirse a los contactos adecuados.
+Todos los filtros de las listas **[!UICONTROL Posibles clientes]** y **[!UICONTROL Contactos]** se pueden usar en los objetivos, incluidos los campos de cuenta, los campos de oportunidad, el estado del flujo de trabajo saliente y las categorías de contactos como **[!UICONTROL Mis contactos de oportunidad]**. Los administradores eligen qué campos CRM se pueden filtrar en [asignación entrante](integrations.md#map-crm-fields-inbound-mapping).
+
+Todos los filtros de objetivo se guardan con el flujo de trabajo y se aplican automáticamente cuando se añaden posibles clientes. [Las sugerencias del agente](tasks.md#agent-suggestions) utilizan el mismo conjunto completo de filtros, por lo que los posibles clientes recomendados coinciden con los criterios de segmentación.
 
 ### Inscribir automáticamente a los posibles clientes desde Marketing destacado
 
@@ -258,6 +259,25 @@ Utilice estos filtros para mantener centrados los flujos de trabajo salientes co
 
 * En **[!UICONTROL clientes potenciales comprometidos]** y **[!UICONTROL Rendimiento]**, use **[!UICONTROL Inscrito por]** para filtrar los posibles clientes por la persona que los inscribió. El filtro toma como valor predeterminado los posibles clientes que ha inscrito.
 * En la ficha **[!UICONTROL Examinar]**, use el filtro para compartir para seleccionar **[!UICONTROL Compartido por mí]**, **[!UICONTROL Compartido conmigo]**, **[!UICONTROL Privado]** o **[!UICONTROL Todos]**.
+
+## Revisar y enviar respuestas de borrador de IA
+
+Cuando un cliente potencial responda a un correo electrónico de flujo de trabajo saliente, puede revisar, editar y enviar una respuesta de borrador de IA directamente desde la vista **[!UICONTROL Clientes potenciales comprometidos]** del flujo de trabajo sin cambiar a Tareas. Para saber cómo el borrador usa el contexto de conversación y qué mensajes necesitan una respuesta personal, consulte [Responder a un cliente potencial con una sugerencia del agente](tasks.md#reply-to-a-prospect-with-an-agent-suggestion).
+
+1. Abra el flujo de trabajo saliente y seleccione **[!UICONTROL Clientes potenciales comprometidos]**.
+1. Seleccione la etiqueta **[!UICONTROL AI draft reply to review]** junto a un cliente potencial.
+
+   El icono de información de la etiqueta explica que el cliente potencial respondió y que hay un borrador listo. También puede encontrar el borrador debajo del correo electrónico al que responde en los puntos de contacto del posible cliente, con la etiqueta **[!UICONTROL Responder a este correo electrónico]**.
+
+1. Lea el mensaje del posible cliente, que aparece encima de la respuesta sugerida.
+1. Edite el borrador según sea necesario.
+1. Seleccione **[!UICONTROL Aprobar y enviar]** para enviar la respuesta o **[!UICONTROL Rechazar respuesta]** para descartarla.
+
+   Después de realizar una de estas acciones, aparece una confirmación.
+
+Para abrir la conversación completa por correo electrónico, selecciona **[!UICONTROL Ver hilo]**.
+
+Cada borrador muestra su estado: **[!UICONTROL Revisión pendiente]**, **[!UICONTROL Enviado]**, **[!UICONTROL Rechazado]** o **[!UICONTROL Cancelado]**. Solamente el propietario del posible cliente puede aprobar o rechazar un borrador. Si no se puede actuar sobre un borrador, los botones no están disponibles y un mensaje explica por qué.
 
 ## Administración de respuestas fuera de la oficina
 
