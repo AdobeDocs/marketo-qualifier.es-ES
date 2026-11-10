@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Adobe Marketo Qualifier] notas de la versión'
+title: Notas de la versión de [!DNL Adobe Marketo Qualifier]
 description: Descubra las novedades de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
@@ -9,14 +9,14 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: f7b2d254601b6dd9a00513dae850ae22a5480b87
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '768'
 ht-degree: 10%
 ---
 # Notas de la versión de [!DNL Adobe Marketo Qualifier]
 
-## Próxima versión
+## Versión de noviembre de 2026
 
 * Describa a quién desea llegar en un lenguaje sencillo y conviértalo en filtros de contactos y posibles clientes de CRM, utilice todos los filtros de contactos y posibles clientes en los objetivos de flujo de trabajo saliente y obtenga una vista previa de los posibles clientes antes de guardar. [Más información](outbound-workflows.md#step-2-configure-targeting-filters).
 * Filtre los posibles clientes por varios valores a la vez en campos de texto como Título del trabajo y Correo electrónico, con hasta cinco valores por filtro. [Más información](prospects.md#filter-and-find-prospects).
