@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1368'
 ht-degree: 0%
 ---
 
@@ -49,7 +49,7 @@ Para configurar las conexiones de CRM, la asignación de campos y la sincronizac
 Marketo Qualifier trabaja con su CRM de las siguientes maneras:
 
 * **CRM MCP queries**: Account Qualification Agent consulta datos de CRM activos para que las respuestas y perspectivas reflejen el estado actual de sus registros.
-* **Complemento incrustado**: el complemento CRM muestra [!DNL Marketo Sales Insights] (MSI) datos y datos auténticos en su CRM. Use el complemento para agregar un cliente potencial a [!DNL Marketo Qualifier]. Para obtener información sobre la instalación y la configuración de acciones de Salesforce, consulte [Incrustar Marketo Qualifier en su CRM](crm-plugin-setup.md).
+* **Complemento incrustado**: el complemento CRM muestra [!DNL Marketo Sales Insights] (MSI) datos y datos auténticos en su CRM. Use el complemento para agregar un cliente potencial a [!DNL Marketo Qualifier]. Para obtener información sobre la instalación y la configuración de acciones de Salesforce, consulte [Configurar el complemento de CRM](crm-plugin-setup.md).
 * **Sincronización de actividades**: cuando un administrador activa **[!UICONTROL Sincronización de actividades]**, las actividades de alcance se sincronizan con CRM y Marketo.
 
 ### Priorizar posibles clientes en el complemento CRM
