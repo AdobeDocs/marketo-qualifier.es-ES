@@ -1,6 +1,6 @@
 ---
-title: Conexiones CRM
-description: Obtenga información sobre cómo instalar Marketo Qualifier en Salesforce o Microsoft Dynamics 365 y configurar acciones de Salesforce para flujos de trabajo salientes y campañas de Marketo.
+title: Configuración del complemento CRM
+description: Obtenga información sobre cómo instalar el complemento Marketo Qualifier CRM en Salesforce o Microsoft Dynamics 365. Configure acciones de Salesforce para flujos de trabajo y campañas de Marketo.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 product_v2:
@@ -17,13 +17,13 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '953'
 ht-degree: 0%
 ---
 
-# Conexiones CRM
+# Configuración del complemento CRM
 
 Instale el complemento CRM [!DNL Adobe Marketo Qualifier] para que los representantes puedan utilizar [!DNL Marketo Sales Insights] y las perspectivas generadas por IA en las páginas de registro de cliente potencial, contacto y cuenta sin salir de Salesforce o Microsoft Dynamics 365. El complemento también proporciona una vista de inicio para [priorizar los posibles clientes en su CRM](admin-settings.md#prioritize-leads-in-the-crm-plugin).
 
