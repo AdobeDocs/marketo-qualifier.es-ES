@@ -21,9 +21,9 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '3086'
+source-wordcount: '3140'
 ht-degree: 0%
 ---
 
@@ -98,16 +98,19 @@ Todos los filtros de las listas **[!UICONTROL Posibles clientes]** y **[!UICONTR
 
 Todos los filtros de objetivo se guardan con el flujo de trabajo y se aplican automáticamente cuando se añaden posibles clientes. [Las sugerencias del agente](tasks.md#agent-suggestions) utilizan el mismo conjunto completo de filtros, por lo que los posibles clientes recomendados coinciden con los criterios de segmentación.
 
-### Inscribir automáticamente a los posibles clientes desde Marketing destacado
+### Obtener recomendaciones de Aspectos destacados de marketing {#automatically-enroll-prospects-from-marketing-highlights}
 
-Un flujo de trabajo saliente puede evaluar la actividad de elementos destacados de marketing en directo según sus criterios de objetivo. Cuando la actividad coincide, [!DNL Marketo Qualifier] resuelve el propietario de CRM del cliente potencial por correo electrónico e inscribe al cliente potencial solamente en un flujo de trabajo elegible que pertenece a ese representante.
+Un flujo de trabajo saliente puede evaluar los posibles clientes y la actividad de Marketing Highlights según sus criterios de segmentación. Envíe posibles clientes desde un déclencheur o lote de campañas inteligentes con el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]** en [!DNL Marketo Engage]. Ver [Configurar aspectos destacados de marketing](marketing-highlights-setup.md).
 
-La inscripción automática sigue esta secuencia:
+Cuando coinciden los criterios, [!DNL Marketo Qualifier] resuelve el propietario del posible cliente de Salesforce o Microsoft Dynamics 365 y recomienda el posible cliente solo a ese representante. Los posibles clientes no se inscriben automáticamente.
+
+Las recomendaciones siguen esta secuencia:
 
 1. Un representante define los criterios de segmentación del flujo de trabajo.
-1. Actividad [!DNL Marketo] activa que llega para un cliente potencial.
-1. [!DNL Marketo Qualifier] resuelve al propietario del cliente potencial desde Salesforce o Microsoft Dynamics y evalúa la actividad con respecto a los flujos de trabajo elegibles del propietario.
-1. Cuando coinciden los criterios, el cliente potencial se inscribe y comienza el contacto.
+1. Un posible cliente llega a Marketing Highlights desde una campaña inteligente de Marketo Engage.
+1. Marketo Qualifier hace coincidir el posible cliente con su propietario de CRM y evalúa el posible cliente y la actividad con los flujos de trabajo aptos del propietario.
+1. Cuando coinciden los criterios, el propietario recibe una recomendación en **[!UICONTROL Tareas]** > **[!UICONTROL Sugerencias del agente]**.
+1. El propietario revisa el cliente potencial recomendado y generó mensajes de correo electrónico, luego [aprueba e inscribe al cliente potencial](#approve-and-enroll-prospects) antes de que comience el contacto.
 
 Si otro representante ya se está poniendo en contacto con el posible cliente, [!DNL Marketo Qualifier] muestra una advertencia antes de que se inicie el alcance duplicado.
 

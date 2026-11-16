@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
     internal-label: Customer engagement
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1172'
 ht-degree: 0%
 ---
 
@@ -110,6 +110,8 @@ Las tareas completadas, omitidas y canceladas son finales. Sus acciones ya no es
 ## Sugerencias del agente
 
 La pestaña **[!UICONTROL Sugerencias del agente]** enumera los posibles clientes recomendados para la inscripción mediante el conjunto completo de [filtros de direccionamiento de flujo de trabajo de salida](outbound-workflows.md#step-2-configure-targeting-filters) configurados. Para activar las recomendaciones, consulte [Flujos de trabajo salientes](outbound-workflows.md).
+
+Los posibles clientes enviados desde [!DNL Marketo Engage] con el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]** también pueden aparecer aquí cuando coincidan con los criterios de direccionamiento de un flujo de trabajo saliente. Cada posible cliente solo se recomienda a su propietario en el Salesforce conectado o en Microsoft Dynamics 365 CRM. El propietario revisa y aprueba al posible cliente antes de la inscripción y la divulgación; el envío de un posible cliente desde Marketo Engage no lo inscribe automáticamente. Ver [Configurar aspectos destacados de marketing](marketing-highlights-setup.md).
 
 Para revisar una sugerencia en el panel de trabajo, selecciónela:
 

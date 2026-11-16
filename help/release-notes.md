@@ -9,15 +9,16 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: f7b2d254601b6dd9a00513dae850ae22a5480b87
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '821'
 ht-degree: 10%
 ---
 # Notas de la versión de [!DNL Adobe Marketo Qualifier]
 
 ## Versión de noviembre de 2026
 
+* Envíe posibles clientes de [!DNL Marketo Engage] a [!DNL Marketo Qualifier] agregando el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]** a cualquier déclencheur o lote de Smart Campaign, sin credenciales de webhook o API que configurar. Se recomiendan a su propietario los posibles clientes que coincidan con un flujo de trabajo saliente para que los revisen. [Más información](marketing-highlights-setup.md).
 * Describa a quién desea llegar en un lenguaje sencillo y conviértalo en filtros de contactos y posibles clientes de CRM, utilice todos los filtros de contactos y posibles clientes en los objetivos de flujo de trabajo saliente y obtenga una vista previa de los posibles clientes antes de guardar. [Más información](outbound-workflows.md#step-2-configure-targeting-filters).
 * Filtre los posibles clientes por varios valores a la vez en campos de texto como Título del trabajo y Correo electrónico, con hasta cinco valores por filtro. [Más información](prospects.md#filter-and-find-prospects).
 * Revise, edite y envíe respuestas de borrador de IA a respuestas de clientes potenciales directamente desde un flujo de trabajo saliente, o rechace borradores que no caben. [Más información](outbound-workflows.md#review-and-send-ai-draft-replies).
@@ -43,7 +44,7 @@ Esta versión incluye:
 
 * Vea [!DNL Marketo Sales Insights] y los datos agénticos en el complemento CRM incrustado y agregue clientes potenciales a [!DNL Marketo Qualifier]. [Más información](admin-settings.md#crm-mcp-and-the-embedded-plugin).
 * Priorice los posibles clientes de CRM con las opciones más probables, mi lista de observación, actividad web, participación por correo electrónico y actividad de seminario web. [Más información](admin-settings.md#prioritize-leads-in-the-crm-plugin).
-* Inscriba automáticamente a los posibles clientes en flujos de trabajo salientes cuando su actividad [!DNL Marketo] activa coincida con los criterios del flujo de trabajo. [Más información](home.md#automatically-enroll-prospects-from-marketing-highlights).
+* Obtenga recomendaciones para los posibles clientes cuya actividad [!DNL Marketo] coincida con los criterios de segmentación de un flujo de trabajo saliente. El representante propietario revisa y aprueba los posibles clientes antes de la inscripción y la divulgación. [Más información](outbound-workflows.md#automatically-enroll-prospects-from-marketing-highlights).
 * Revise el contexto del cliente potencial y exporte la lista de clientes potenciales y vea los resúmenes de personas de IA en [!DNL Marketo Optimizer] instancias de Prime y Ultimate. [Más información](prospects.md#review-prospect-context-and-export-the-list).
 * Revise y apruebe los correos electrónicos de clientes potenciales generados desde la cola de tareas y responda con sugerencias del agente durante un flujo de trabajo saliente. [Más información](tasks.md).
 
