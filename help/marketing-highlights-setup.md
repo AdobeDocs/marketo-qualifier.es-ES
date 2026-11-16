@@ -1,6 +1,6 @@
 ---
 title: Configurar aspectos destacados de marketing
-description: Aprenda a conectar Marketo a Adobe Marketo Qualifier para que los representantes puedan ver y filtrar posibles clientes por actividad de Marketo en directo en Elementos destacados de marketing.
+description: Aprenda a enviar posibles clientes desde Marketo Engage a Marketo Qualifier mediante un paso de flujo de campaña inteligente y obtenga recomendaciones de aspectos destacados de marketing para su revisión.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 product_v2:
@@ -21,30 +21,63 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 3%
+source-wordcount: '1011'
+ht-degree: 2%
 ---
 
 # Configurar aspectos destacados de marketing
 
-Marketing Highlights muestra la actividad [!DNL Marketo] activa de cada posible cliente, tal como aperturas de correo electrónico y clics, visitas web y rellenos de formularios. Este artículo explica cómo conectar su instancia de [!DNL Marketo] para que la actividad fluya.
+Envíe posibles clientes de [!DNL Adobe Marketo Engage] a [!DNL Adobe Marketo Qualifier] agregando el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]** a una campaña inteligente. Los representantes verán los posibles clientes y la actividad que los envió en **[!UICONTROL Posibles clientes]** > **[!UICONTROL Aspectos destacados del marketing]**.
+
+El paso de flujo funciona con ambos tipos de campañas inteligentes:
+
+* **Las campañas de Déclencheur** envían participación a medida que se producen, como aperturas y clics en correos electrónicos, clics en vínculos, rellenos de formularios y visitas a páginas web.
+* **Campañas por lotes** envían los posibles clientes aptos cada vez que se ejecuta la campaña.
+
+Cuando un posible cliente coincide con los criterios de segmentación de un flujo de trabajo saliente, Marketo Qualifier recomienda el posible cliente a su propietario en el CRM conectado. El representante propietario revisa y aprueba el posible cliente antes de la inscripción y el contacto. Los posibles clientes no se inscriben automáticamente.
+
+Marketing Highlights está disponible en todas las regiones de producción: Norteamérica, EMEA y Australia.
+
+## Antes de empezar {#before-you-begin}
+
+Confirme estos requisitos previos antes de agregar el paso de flujo:
+
+* Un administrador de Marketo ha activado **[!UICONTROL Enviar a Marketo Qualifier]** para su instancia de Marketo Engage en **[!UICONTROL Administrador]**.
+* Marketo Qualifier está [conectado a Salesforce o Microsoft Dynamics 365](getting-started.md#connect-your-crm), por lo que cada posible cliente puede coincidir con su propietario de CRM.
 
 >[!IMPORTANT]
 >
->Para completar esta configuración se requiere acceso a Adobe Developer Console y a **[!UICONTROL Admin]** en [!DNL Marketo]. Trabaje con su contacto de Adobe y con su administrador de [!DNL Marketo] para completar las cuatro partes siguientes.
+>El paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]** no requiere credenciales de webhook, extremo de URL o API. No necesita acceder a Adobe Developer Console para utilizarlo. Si el paso de flujo no está disponible, póngase en contacto con el administrador de Marketo.
 
-El programa de instalación consta de cuatro partes:
+## Envío de posibles clientes con una campaña inteligente {#send-leads-with-a-smart-campaign}
 
-* Parte A: Crear credenciales de API en Adobe Developer Console.
-* Parte B: Recopilar el extremo y los identificadores de Adobe Marketo Qualifier.
-* Parte C: Configurar un webhook en [!DNL Marketo Engage].
-* Parte D: Agregar el webhook a una campaña inteligente de déclencheur.
+Utilice una campaña inteligente existente o cree una para los posibles clientes y las actividades que desee enviar.
 
-Una vez completada la configuración, los usuarios verán y filtrarán esta actividad en **[!UICONTROL Posibles clientes]** > **[!UICONTROL Aspectos destacados del marketing]**.
+1. En Marketo Engage, abra una campaña inteligente o seleccione **[!UICONTROL Actividades de marketing]** > **[!UICONTROL Nueva]** > **[!UICONTROL Campaña inteligente]** para crear una.
+1. En la ficha **[!UICONTROL Lista inteligente]**, defina qué posibles clientes cumplen los requisitos.
 
-## Parte A: Creación de credenciales de API {#part-a-create-api-credentials}
+   * Para una campaña de déclencheur, agregue déclencheur para las actividades que desee enviar, como **[!UICONTROL Visitas la página web]**, **[!UICONTROL Clics en el vínculo de la página web]** o **[!UICONTROL Clics en el vínculo del correo electrónico]**.
+   * Para una campaña por lotes, añada filtros para los posibles clientes que desee enviar.
+
+1. En la ficha **[!UICONTROL Flujo]**, agregue el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]**.
+1. Active la campaña de déclencheur o ejecute o programe la campaña por lotes.
+1. En Marketo Qualifier, abra **[!UICONTROL Posibles clientes]** > **[!UICONTROL Aspectos destacados del marketing]** para revisar los posibles clientes y su actividad.
+
+   La actividad muestra cómo llegó un posible cliente, por ejemplo **[!UICONTROL Se agregó desde la campaña por lotes]**.
+
+Los posibles clientes que coinciden con los criterios de segmentación de un flujo de trabajo saliente solo se recomiendan a su propietario de CRM. Para revisar las recomendaciones, abra **[!UICONTROL Tareas]** > **[!UICONTROL Sugerencias del agente]**. Ver [Obtener recomendaciones de aspectos destacados del marketing](outbound-workflows.md#automatically-enroll-prospects-from-marketing-highlights) y [sugerencias de agentes](tasks.md#agent-suggestions).
+
+## Configuraciones de webhook existentes {#existing-webhook-setups}
+
+Las siguientes instrucciones describen la configuración anterior del webhook. No son necesarios para el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]**. Si su organización ya utiliza un gancho web, trabaje con el administrador de Marketo y con el contacto de Adobe antes de cambiar esa configuración.
+
++++Instrucciones de configuración de Webhook
+
+Estas instrucciones requieren acceso a Adobe Developer Console y a **[!UICONTROL Admin]** en Marketo Engage.
+
+### Parte A: Creación de credenciales de API {#part-a-create-api-credentials}
 
 Estas credenciales permiten que [!DNL Marketo] se autentique de forma segura en Marketo Qualifier.
 
@@ -66,7 +99,7 @@ Para crear las credenciales:
 >
 >Mantenga el secreto del cliente en privado. Trátela como una contraseña y no la envíe por correo electrónico. Utilice el canal seguro aprobado de su organización para compartirlo con quien configure el webhook.
 
-## Parte B: Recopilar el punto final y los identificadores {#part-b-gather-your-endpoint-and-identifiers}
+### Parte B: Recopilar el punto final y los identificadores {#part-b-gather-your-endpoint-and-identifiers}
 
 Necesita tres valores para [Parte C](#part-c-configure-the-marketo-webhook):
 
@@ -84,7 +117,7 @@ Necesita tres valores para [Parte C](#part-c-configure-the-marketo-webhook):
 
 Si no está seguro de su región, ID de imsOrg o nombre de la zona protegida, su contacto de Adobe puede confirmarlos.
 
-## Parte C: Configuración del webhook de Marketo {#part-c-configure-the-marketo-webhook}
+### Parte C: Configuración del webhook de Marketo {#part-c-configure-the-marketo-webhook}
 
 Para crear el webhook:
 
@@ -92,7 +125,7 @@ Para crear el webhook:
 1. Seleccione **[!UICONTROL Nuevo webhook]**.
 1. Establece **[!UICONTROL URL]** a la URL de punto final para tu región desde [Parte B](#part-b-gather-your-endpoint-and-identifiers).
 1. Establecer **[!UICONTROL tipo de solicitud]** en `POST`.
-1. Establezca la codificación de token de solicitud **[!UICONTROL 1&rbrace; en `JSON`.]** Esta configuración es obligatoria.
+1. Establezca la codificación de token de solicitud **[!UICONTROL 1} en `JSON`.]** Esta configuración es obligatoria.
 1. Pegue la plantilla de carga útil siguiente en **[!UICONTROL Template]**. Use **[!UICONTROL Insertar token]** de [!DNL Marketo] para que coincidan con los nombres de campo de su instancia.
 
    >[!NOTE]
@@ -171,7 +204,7 @@ Para crear el webhook:
 
 1. Seleccione **[!UICONTROL Guardar]**.
 
-## Parte D: Agregar el webhook a una campaña inteligente de déclencheur {#part-d-add-the-webhook-to-a-trigger-smart-campaign}
+### Parte D: Agregar el webhook a una campaña inteligente de déclencheur {#part-d-add-the-webhook-to-a-trigger-smart-campaign}
 
 Agregue un paso de flujo **[!UICONTROL Llamar al webhook]** a una campaña inteligente de déclencheur, ya sea una existente o una nueva. Los déclencheur de listas inteligentes de esa campaña deciden qué actividades se envían a Marketo Qualifier.
 
@@ -183,6 +216,8 @@ Para agregar el webhook:
 1. Active la campaña inteligente.
 
 La actividad de esa campaña inteligente ahora fluye a Marketo Qualifier. Los representantes ven y filtran esta actividad en **[!UICONTROL Prospects]** > **[!UICONTROL Marketing Highlights]**.
+
++++
 
 >[!MORELIKETHIS]
 >

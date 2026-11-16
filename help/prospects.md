@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1058'
 ht-degree: 1%
 ---
 
@@ -40,7 +40,7 @@ Para ver los posibles clientes y contactos a los que puede acceder, seleccione *
 
 * **[!UICONTROL Posibles clientes]** posibles clientes asignados a usted en el CRM conectado.
 * **[!UICONTROL Contactos]** Contactos asignados a usted en el CRM conectado, con su cuenta asociada. Los datos de contacto también incluyen el nombre del propietario. Estos detalles están disponibles para Salesforce y Microsoft Dynamics 365.
-* **[!UICONTROL Aspectos destacados del marketing]**: clientes potenciales con actividad de Marketo en directo, como aperturas de correos electrónicos o clics.
+* **[!UICONTROL Aspectos destacados del marketing]**: clientes potenciales enviados desde Marketo Engage déclencheur o campañas inteligentes por lotes, incluyendo participación como aperturas de correo electrónico o clics.
 * **[!UICONTROL Lista de personas]** clientes potenciales que se importan o agregan manualmente.
 
 ## Revisar el contexto del cliente potencial y exportar la lista
@@ -97,16 +97,16 @@ También puede filtrar contactos por campos desde su cuenta asociada, como secto
 
 ### Filtrar por aspectos destacados de marketing
 
-Revise y dé prioridad a los posibles clientes por su participación de [!DNL Marketo] activa, como la actividad de correo electrónico, las visitas web y los rellenos de formulario. El compromiso aparece en tiempo casi real, a medida que sucede.
+Revise y dé prioridad a los posibles clientes enviados desde [!DNL Marketo Engage], incluida la actividad de correo electrónico, las visitas web y los rellenos de formulario. Las campañas de déclencheur envían participación a medida que se produce y las campañas por lotes envían posibles clientes aptos cada vez que se ejecutan.
 
 Para filtrar posibles clientes por Aspectos destacados de marketing:
 
 1. Seleccione **[!UICONTROL Filtro]**.
 1. Agregue un filtro de Elementos destacados de marketing y establezca el tipo de actividad, la campaña u otros atributos para que se centren en la participación que importa.
 
-Cada posible cliente muestra su última actividad [!DNL Marketo] junto con el historial reciente.
+Cada posible cliente muestra su última actividad [!DNL Marketo] junto con el historial reciente. La actividad puede mostrar cómo llegó un posible cliente, por ejemplo **[!UICONTROL Se agregó desde la campaña por lotes]**.
 
-Marketing Highlights está disponible en todas las regiones de producción. Un administrador completa una configuración única que conecta a [!DNL Marketo] con Marketo Qualifier. Ver [Configurar aspectos destacados de marketing](integrations.md#turn-on-marketo-engagement-filtering).
+Marketing Highlights está disponible en todas las regiones de producción. Para enviar posibles clientes con el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]**, consulte [Configurar elementos destacados de marketing](marketing-highlights-setup.md).
 
 ## Revisar detalles del cliente potencial
 

@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: df256cf271296b82fab2ed10725a0d6bd165e05b
+source-git-commit: adcfe279f38ca319589612820351c48af750bad9
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1517'
 ht-degree: 1%
 ---
 
@@ -186,7 +186,7 @@ Cuando la sincronización de actividades está desactivada, Marketo Qualifier si
 
 Marketing Highlights les permite a los representantes encontrar y priorizar prospectos por su participación de [!DNL Marketo] en vivo, como aperturas de correo electrónico y clics. Ver [Filtrar por elementos destacados de marketing](prospects.md#filter-by-marketing-highlights).
 
-Un administrador completa una configuración única que conecta a [!DNL Marketo] con Marketo Qualifier para la organización y la zona protegida relevantes. La configuración cubre la creación de credenciales de API en Adobe Developer Console, la configuración de un enlace web en [!DNL Marketo] y la adición de ese enlace web a una campaña inteligente de déclencheur. Consulte [Configurar elementos destacados de marketing](marketing-highlights-setup.md) para ver los pasos completos.
+Agregue el paso de flujo **[!UICONTROL Enviar a Marketo Qualifier]** a un déclencheur o lote de Smart Campaign en [!DNL Marketo Engage] para enviar posibles clientes que cumplan los requisitos, sin credenciales de webhook o API que configurar. Consulte [Configurar elementos destacados de marketing](marketing-highlights-setup.md) para conocer los requisitos previos y los pasos.
 
 Marketing Highlights está disponible en todas las regiones de producción: Norteamérica, EMEA y Australia.
 
